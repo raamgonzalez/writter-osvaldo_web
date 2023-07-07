@@ -1,0 +1,82 @@
+---
+
+interface NavLinks {
+	name: string;
+	href: string;
+	active: boolean;
+}
+
+export const navLinks: NavLinks[] = [
+	{
+		name: 'Inicio',
+		href: '/',
+		active: true
+	},
+	{
+		name: 'Libros',
+		href: '/books',
+		active: false
+	},
+	{
+		name: 'Artículos',
+		href: '/articles',
+		active: true
+	},
+	{
+		name: 'Acerca',
+		href: '/about',
+		active: true
+	},
+	{
+		name: 'Prensa',
+		href: '/press',
+		active: false
+	}
+]
+---
+
+
+<section class="navbar">
+	<nav class="navbar__nav nav">
+		<ul class="nav__ul">
+			{ navLinks.map((link) => {
+				return (
+					link.active && (
+					<li class="nav__li">
+						<a class="nav__a" href={ link.href }>{ link.name }</a>
+					</li>
+					)
+				)
+			})
+			}
+		</ul>
+	</nav>
+</section>
+
+
+<style>
+	.navbar{
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		.navbar__nav{
+			position: fixed;
+			width: fit-content;
+			background-color: transparent;
+			bottom: 0;
+			padding: 1em 2em;
+			font-size: 1.5em;
+		}
+
+		.nav__ul{
+		display: flex;
+		gap: 1rem;
+		flex-direction: row;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	}
+	
+</style>

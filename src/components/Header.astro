@@ -1,0 +1,23 @@
+---
+import NavBar from '../components/NavBar.astro'
+import Logo from './Logo.astro';
+---
+
+<section class="header relative text-gray-300 rounded-xl mt-3  px-4 py-2 border-b border-stone-900 shadow-md shadow-neutral-950">
+		<!-- <img class="header__img" src='./razones_seminales-edit.jpg'/> -->
+		<h1 class="text-6xl">Osvaldo Gonzalez Iglesias</h1>
+		<p class="text-2xl mt-2 ml-2">Escritor</p>
+		<!-- <NavBar/> -->
+		<Logo/>
+</section>
+
+
+<style>
+	.header{
+		position: relative;
+		height: 300px;
+		background-image: url('./home.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+</style>
