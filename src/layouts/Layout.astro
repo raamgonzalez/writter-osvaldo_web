@@ -24,11 +24,36 @@ const { title } = Astro.props;
 		<slot />
 		<Footer />
 	</body>
-	
 </html>
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200;300;400&display=swap');
+:root {
+	--accent: 124, 58, 237;
+	--accent-gradient: linear-gradient(5deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200;300;400&display=swap');
+	--color-primary: #FFEAD5;
+	--color-secondary: #E3E3E3;
+	--color-icons: #1E1E1E;
+	--color-background: #2D272D;
+	/*Opacity 20% */
+	--color-slider: #559E97;
+
+
+	--margin-xlarge: 80px;
+	--margin-large: 40px;
+	--margin-small: 20px;
+
+	--padding-horizontal: 20px;
+
+	--font-base: 'Oswald', sans-serif;
+	--font-text: 'Belleza', sans-serif; 
+
+	--font-size-large: 31px;
+	--font-size-medium: 20px;
+	--font-size-small: 16px;
+
+}
+
 
 	html {
 
