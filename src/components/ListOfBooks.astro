@@ -19,10 +19,9 @@ type Book = {
 	<LineH/>
 	<section class="books__swipe">
 		{books.map((book: Book) => (
-					<img src={book.img} alt={`Imagen de portada de libro ${book.title}`}/>
+			<img src={book.img} alt={`Imagen de portada de libro ${book.title}`}/>
 		))}
 	</section>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </section>
 
 <style>

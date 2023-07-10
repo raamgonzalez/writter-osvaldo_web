@@ -1,3 +1,41 @@
-<section class="h-[100px] bg-sky-900">
-	<h3>Footer</h3>
+---
+import LineH from './ui/LineH.astro'
+import Contact from './Contact.astro'
+import { data } from '../data/data';
+import Logo from './Logo.astro';
+
+const { films } = data;
+---
+
+
+<section class="contact">
+	<h2>CONTACTO</h2>
+	<LineH/>
+	<Contact/>
+	<section class="contact__policy">
+		<p>Todos los derechos reservados</p>
+		<Logo size={'small'}/>
+	</section>
 </section>
+
+
+
+<style>
+	.contact{
+		margin: var(--margin-xlarge) 0 var(--margin-small) 0;
+	}
+	.contact h2{
+		font-size: var(--font-size-large);
+		margin: var(--margin-small) 0 0 0;
+	}
+
+	.contact__policy{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		place-items: center;
+		padding: 0;
+	}
+
+
+</style>

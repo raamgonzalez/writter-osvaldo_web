@@ -1,0 +1,56 @@
+---
+import ButtonArrow from './ui/ButtonArrow.astro'
+import { data } from '../data/data';
+
+const socials = data.contact;
+
+type Social = {
+	id: number;
+	title: string;
+	href: string;
+	state: boolean;
+}
+
+---
+
+<section class="contact">
+	{
+		socials.map((social:Social)=>(
+			social.state &&
+			<section class="contact__container">
+				<a class="contact__a" href={social.href} target="_blank">
+					{social.title.toUpperCase()}
+				</a>
+				<ButtonArrow rotate={true} type/>
+			</section>
+		))
+	}
+</section>
+
+
+<style>
+	.contact{
+		margin: var(--margin-large) 0 var(--margin-large) 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.contact__container{
+		display: flex;
+		padding: 0 0 0 11px;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 100%;
+		height: 35px;
+		border-radius: 5px;
+		border: 1px solid var(--color-primary);
+	}
+	.contact__a{
+
+
+		font-size: var(--font-size-medium);
+		font-family: var(--font-text);
+	}
+</style>

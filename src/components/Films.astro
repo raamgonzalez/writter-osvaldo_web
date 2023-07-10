@@ -1,0 +1,51 @@
+---
+import LineH from './ui/LineH.astro'
+import { data } from '../data/data';
+
+const { films } = data;
+
+type Film = {
+	id: number;
+	title: string;
+	poster: string;
+	movie: string;
+	href: string;
+};
+
+---
+
+
+<section class="films">
+	<h2>FILMOTECA</h2>
+	<LineH/>
+	<section class="films__container">
+		{films.map((film: Film) => (
+			<video class="films__video" controls>
+				<source src={film.movie} type="video/mp4"/>
+			</video>
+		))}
+	</section>
+</section>
+
+
+<style>
+	.films{
+		margin: var(--margin-xlarge) 0 0 0;
+	}
+	.films h2{
+		font-size: var(--font-size-large);
+	}
+	.films__container{
+		margin: var(--margin-small) 0 0 0;
+		display: flex;
+		overflow-x: scroll;
+		gap: 1rem;
+	}
+	.films__video{
+		width: 100%;
+		height: auto;
+		min-width: 335px;
+		min-height: 298px;
+
+	}
+</style>
