@@ -1,0 +1,21 @@
+---
+import ListOfNotes from './ListOfNotes.astro';
+import LineH from './ui/LineH.astro'
+
+---
+
+<section class="notes">
+	<h2>NOTAS</h2>
+	<LineH/>
+	<ListOfNotes/>
+</section>
+
+
+<style>
+	.notes{
+		margin: var(--margin-xlarge) 0 0 0;
+	}
+	.notes h2{
+		font-size: var(--font-size-large);
+	}
+</style>

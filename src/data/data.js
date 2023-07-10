@@ -63,5 +63,22 @@ export const data = {
 			phrase: 'Es justicia y no caridad lo que el mundo necesita',
 			author: 'Mary Wollstonecraft'
 		},
-	]
+	],
+	notes: [
+	{
+		id: 1,
+		title: 'Entrevista - Editorial Adarve',
+		content: 'Presentación Neurosis',
+		href: '#',
+	},{
+		id: 1,
+		title: 'Entrevista - Editorial Adarve',
+		content: 'Presentación Neurosis',
+		href: '#',
+	},{
+		id: 1,
+		title: 'Entrevista - Editorial Adarve',
+		content: 'Presentación Neurosis',
+		href: '#',
+	}]
 }
