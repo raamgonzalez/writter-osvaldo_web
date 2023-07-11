@@ -91,28 +91,28 @@ export const data = {
 			title: 'Así hablo Zaratusta',
 			content: 'Nota editorial',
 			href: 'https://drive.google.com/file/d/1KgCidi-YJ-roLBJyH6mp90os1KnPGkxm/view?usp=sharing',
-			important: false
+			important: true
 		},
 		{
 			id: 5,
 			title: 'Donde cobijo la mirada',
 			content: 'Poema del autor',
 			href: 'https://drive.google.com/file/d/1_Qw-LXhqzgQozlirIfPb4leRndOHs7wp/view?usp=sharing',
-			important: false
+			important: true
 		},
 		{
 			id: 6,
 			title: 'Ya no vuelvas',
 			content: 'Poema del autor',
 			href: 'https://drive.google.com/file/d/19Q3uK1tUCp9TyviSxN0EGsO16fvxGUmm/view?usp=sharing',
-			important: false
+			important: true
 		},
 		{
 			id: 6,
 			title: 'Soy Nietzsche',
 			content: 'Obra de teatro',
 			href: 'https://drive.google.com/file/d/1MPysv5GUxtfPsHSSt6luNu5NFdpGsMiX/view?usp=sharing',
-			important: false
+			important: true
 		}
 	],
 	films: [

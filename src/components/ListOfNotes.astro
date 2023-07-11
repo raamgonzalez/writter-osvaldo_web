@@ -25,12 +25,34 @@ type Note = {
 			<ButtonArrow href={note.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'}/>
 		</section>
 	))}
-	<div class="note__button">
+		<!-- <section>
+			{notes.map((note:Note) => (
+				!note.important &&
+				<section class="note__section--noshow">
+					<section class="note__singular">
+						<h3>{note.title}</h3>
+						<p>{note.content}</p>
+					</section>
+					<ButtonArrow href={note.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'}/>
+				</section>
+			))}
+		</section>
+	<button onclick='handleClickList()' class="note__button">
 		<p>VER MÁS</p>
 		<ButtonArrow classSvg={'button__svg button__svg--nobackground vertical' }  classPath={'button__path--nobackground rotate-0'}/>
-	</div>
+	</button>
+
+	<script>
+		const handleClickList = () => {
+			const noteSection = document.querySelector('.note__section--noshow') as HTMLElement | null;
+			if(noteSection === null) return;
+			noteSection.classList.toggle('note__section--noshow');
+		}
+	</script> -->
 </section>
 
+
+	
 
 <style>
 	.note{
@@ -52,6 +74,11 @@ type Note = {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.note__section--noshow{
+		display: none;
+		
 	}
 
 	.note__button{
