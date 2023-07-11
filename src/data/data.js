@@ -71,38 +71,54 @@ export const data = {
 			content: 'Presentación Neurosis',
 			href: 'https://developer.mozilla.org/es/docs/Web/HTML/Element/button',
 			important: true
-		},{
+		},
+		{
 			id: 2,
-			title: 'Entrevista - Editorial Adarve',
-			content: 'Presentación Neurosis',
-			href: '#',
+			title: 'Jeuretche en sus laberintos',
+			content: 'Obra en tres actos, un actor, voz en off',
+			href: 'https://drive.google.com/file/d/1v04QeE-7wTaJZ3KV5JnALHfL3AFErgd0/view?usp=sharing',
 			important: true
-		},{
+		},
+		{
 			id: 3,
-			title: 'Entrevista - Editorial Adarve',
-			content: 'Presentación Neurosis',
-			href: '#',
+			title: 'Borges en sus laberintos',
+			content: 'Obra de teatro',
+			href: 'https://drive.google.com/file/d/1_a52eZYW1oX43qnCzr8mJJXfbi8wacwl/view?usp=sharing',
 			important: true
-		}
-		,{
+		},
+		{
 			id: 4,
-			title: 'Entrevista - Editorial Adarve',
-			content: 'Presentación Neurosis',
-			href: '#',
+			title: 'Así hablo Zaratusta',
+			content: 'Nota editorial',
+			href: 'https://drive.google.com/file/d/1KgCidi-YJ-roLBJyH6mp90os1KnPGkxm/view?usp=sharing',
 			important: false
-		}
-		,{
+		},
+		{
 			id: 5,
-			title: 'Entrevista - Editorial Adarve',
-			content: 'Presentación Neurosis',
-			href: '#',
+			title: 'Donde cobijo la mirada',
+			content: 'Poema del autor',
+			href: 'https://drive.google.com/file/d/1_Qw-LXhqzgQozlirIfPb4leRndOHs7wp/view?usp=sharing',
+			important: false
+		},
+		{
+			id: 6,
+			title: 'Ya no vuelvas',
+			content: 'Poema del autor',
+			href: 'https://drive.google.com/file/d/19Q3uK1tUCp9TyviSxN0EGsO16fvxGUmm/view?usp=sharing',
+			important: false
+		},
+		{
+			id: 6,
+			title: 'Soy Nietzsche',
+			content: 'Obra de teatro',
+			href: 'https://drive.google.com/file/d/1MPysv5GUxtfPsHSSt6luNu5NFdpGsMiX/view?usp=sharing',
 			important: false
 		}
 	],
 	films: [
 		{
 			id: 1,
-			title: 'Presnetación - Libro Razones seminales',
+			title: 'Presentación - Libro Razones seminales',
 			poster: '/films/poster/poster_presentacion-razones-seminales.jpg',
 			href: 'https://www.youtube.com/watch?v=6REACrUpPTs',
 			movie: '/films/movie_presentacion-razones-seminales.mp4'

@@ -16,7 +16,7 @@ const {href, classSvg, classPath} = Astro.props
 </a> -->
 
 <a class="svg__container" href={href? href : 'null'} target="_blank" >
-	<svg class={classSvg} width="35px" height="35" xmlns="http://www.w3.org/2000/svg">
+	<svg class={classSvg} width="35px" height="35px" xmlns="http://www.w3.org/2000/svg">
 		<path class={classPath}  d="M20.2566 17.7244L15.1925 22.7886M15.1925 22.7886L10.1283 17.7244M15.1925 22.7886L15.1925 7.59617"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 	</svg>		
 </a>
@@ -24,8 +24,8 @@ const {href, classSvg, classPath} = Astro.props
 
 <style>
 
-.button__svg{
-	border-radius: 5px;
+	.button__svg{
+		border-radius: 5px;
 	}
 
 	.button__svg--background{
@@ -59,6 +59,10 @@ const {href, classSvg, classPath} = Astro.props
 	.button__svg--nobackground:hover .button__path--nobackground{
 		stroke: var(--color-icons);
 		animation: rotate 0.7s ease-in-out infinite alternate;
+	}
+
+	.vertical{
+		transform: translate(3px, 2px) rotateZ(0deg);
 	}
 
 	/* @keyframes rotate{

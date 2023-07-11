@@ -19,9 +19,11 @@ type Film = {
 	<h2>FILMOTECA</h2>
 	<LineH/>
 	<section class="films__container">
-		{films.map((film: Film) => (
-			<a href={film.href}><img src={film.poster} class="films__img"></a>
-		))}
+		{
+		films.map((film: Film) => (
+			<a href={film.href} target="_blank"><img src={film.poster} class="films__img"></a>
+		))
+		}
 	</section>
 </section>
 
@@ -37,14 +39,16 @@ type Film = {
 		margin: var(--margin-small) 0 0 0;
 		display: flex;
 		gap: 1rem;
-		overflow: scroll;
+		overflow-x: scroll;
 	}
 	.films__img{
-		object-fit: contain;
-		width: 100%;
-		height: auto;
+		object-fit: cover;
 		min-width: 335px;
 		min-height: 298px;
+	}
 
+	.films__img:hover{
+		filter: grayscale(70%);
+		transition: all 0.5s ease-in-out;
 	}
 </style>
