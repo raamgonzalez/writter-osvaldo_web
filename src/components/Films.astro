@@ -20,9 +20,7 @@ type Film = {
 	<LineH/>
 	<section class="films__container">
 		{films.map((film: Film) => (
-			<video class="films__video" controls>
-				<source src={film.movie} type="video/mp4"/>
-			</video>
+			<a href={film.href}><img src={film.poster} class="films__img"></a>
 		))}
 	</section>
 </section>
@@ -38,10 +36,11 @@ type Film = {
 	.films__container{
 		margin: var(--margin-small) 0 0 0;
 		display: flex;
-		overflow-x: scroll;
 		gap: 1rem;
+		overflow: scroll;
 	}
-	.films__video{
+	.films__img{
+		object-fit: contain;
 		width: 100%;
 		height: auto;
 		min-width: 335px;

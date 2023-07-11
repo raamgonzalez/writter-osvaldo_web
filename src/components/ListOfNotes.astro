@@ -22,12 +22,12 @@ type Note = {
 				<h3>{note.title}</h3>
 				<p>{note.content}</p>
 			</section>
-			<ButtonArrow href={note.href} background={true} rotate={true}/>
+			<ButtonArrow href={note.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'}/>
 		</section>
 	))}
 	<div class="note__button">
 		<p>VER MÁS</p>
-		<ButtonArrow rotate={false} type/>
+		<ButtonArrow classSvg={'button__svg button__svg--nobackground' }  classPath={'button__path--nobackground rotate-0'}/>
 	</div>
 </section>
 

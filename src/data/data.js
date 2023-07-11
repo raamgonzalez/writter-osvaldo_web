@@ -102,23 +102,23 @@ export const data = {
 	films: [
 		{
 			id: 1,
-			title: 'La ciudad del sol',
-			poster: '/films/poster_ciudad-del-sol.jpg',
-			href: 'https://www.youtube.com/watch?v=_SSMIqFoiS4',
-			movie: '#'
+			title: 'Presnetación - Libro Razones seminales',
+			poster: '/films/poster/poster_presentacion-razones-seminales.jpg',
+			href: 'https://www.youtube.com/watch?v=6REACrUpPTs',
+			movie: '/films/movie_presentacion-razones-seminales.mp4'
 		},
 		{
 			id: 2,
-			title: 'Neurosis',
-			poster: '/films/poster_neurosis.jpg',
-			href: '#',
+			title: 'Debate y Convergencia - Radio el Mundo',
+			poster: '/films/poster/poster_debate-radio-el-mundo.jpg',
+			href: 'https://www.youtube.com/watch?v=9piUMWS35eM',
 			movie: '#'
 		},
 		{
 			id: 3,
-			title: 'Tierra sin mal',
-			poster: '/films/poster_tierra-sin-mal.jpg',
-			href: '#',
+			title: 'Que Quilombo - Radio Cultura Lomas',
+			poster: '/films/poster/poster_debate-radio-lomas.jpg',
+			href: 'https://www.youtube.com/watch?v=OOJx5AhhzEQ',
 			movie: '#'
 		},
 	],

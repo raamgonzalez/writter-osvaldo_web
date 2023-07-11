@@ -1,37 +1,138 @@
 ---
 
-const {href, background, rotate} = Astro.props
+// const {href, background, rotate} = Astro.props
+const {href, classSvg, classPath} = Astro.props
 
-const strokeColor = background? '#2D272D' : '#FFEAD5'
+// const strokeColor = background? '#2D272D' : '#FFEAD5'
 
-
+// stroke={strokeColor}
 ---
 
 
-<a class={background? 'button--background' : 'button--nobackground'} href={href? href : 'null'} target="_blank" >
-	<svg class={rotate? 'buttton__svg rotate-[220deg]' : 'buttton__svg'} width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path stroke={strokeColor} d="M20.2566 17.7244L15.1925 22.7886M15.1925 22.7886L10.1283 17.7244M15.1925 22.7886L15.1925 7.59617"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- <a class={background? 'button--background' : 'button--nobackground'} href={href? href : 'null'} target="_blank" >
+	<svg class={rotate? 'buttton__svg rotate-[220deg]' : 'buttton__svg'} width="31" height="31" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+		<path class={background? 'button__svg--primary':'button__svg--secondary'} d="M20.2566 17.7244L15.1925 22.7886M15.1925 22.7886L10.1283 17.7244M15.1925 22.7886L15.1925 7.59617"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+	</svg>		
+</a> -->
+
+<a class="svg__container" href={href? href : 'null'} target="_blank" >
+	<svg class={classSvg} width="35px" height="35" xmlns="http://www.w3.org/2000/svg">
+		<path class={classPath}  d="M20.2566 17.7244L15.1925 22.7886M15.1925 22.7886L10.1283 17.7244M15.1925 22.7886L15.1925 7.59617"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 	</svg>		
 </a>
 
+
 <style>
-	.button--background{
-		background-color: var(--color-primary);
-		width: 35px;
-		height: 35px;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		border-radius: 5px;
+.button__svg{
+	border-radius: 5px;
 	}
+
+	.button__svg--background{
+		background-color: var(--color-primary);
+	}
+
+	.button__svg--background:hover{
+		background-color: var(--color-icons);
+		transition: all  0.3s ease-in-out;
+	}
+
+	.button__path--background{
+		stroke: var(--color-background);
+		transform: translate(19px, 40px) rotateZ(220deg);
+	}
+
+	.button__svg--background:hover .button__path--background{
+		stroke: var(--color-primary);
+		animation: rotate 0.7s ease-in-out infinite alternate;
+	}
+
+	.button__svg--nobackground{
+		background-color: transparent;
+		transform: translate(0px, -3px) rotateZ(220deg);
+	}
+
+	.button__path--nobackground{
+		stroke: var(--color-primary);
+	}
+
+	.button__svg--nobackground:hover .button__path--nobackground{
+		stroke: var(--color-icons);
+		animation: rotate 0.7s ease-in-out infinite alternate;
+	}
+
+	/* @keyframes rotate{
+		0%{
+			transform: translate(18px, 40px);
+		}
+		100%{
+			transform: translate(18px, 100px);
+		}
+	} */
+
+/*
 	.button__svg{
+		stroke: aqua;
 		color: var(color);
 	}
 
-	.button--background{
-		width: 35px;
-		height: 35px;
+	.button__svg:hover{
+		color: black;
 	}
+
+	.button__svg--background:hover{
+		background-color: var(--color-icons);
+		transition: all  0.3s ease-in-out;
+	}
+	.button__svg--background:hover .button__svg--primary{
+		stroke: var(--color-primary);
+		animation: rotate 0.7s ease-in-out infinite alternate;
+		padding: 0;
+		margin: ;
+	}
+
+	@keyframes rotate{
+		0%{
+			transform: translateY(0);
+		}
+		100%{
+			transform: translateY(50px);
+		}
+	}
+	.button--nobackground{
+		height: auto;
+		padding: 0;
+	}
+
+	.button--nobackground:hover{
+		background-color: var(--color-icons);
+		stroke: var(--color-icons);
+		color: var(--color-icons);
+		transition: all  0.3s ease-in-out;
+	}
+	.button__svg--primary{
+		stroke: var(--color-background);
+	}
+
+	.button__svg--secondary{
+		stroke: var(--color-primary);
+	} */
+
+
+	
+
+
+	/* .contact__container:hover .button__svg--secondary{
+		background-color: aliceblue;
+		color: aqua;
+		stroke: blue;
+	} */
+	
+
 </style>
+
+
+<!-- .button--nobackground:hover .button__svg--secondary{
+	stroke: var(--color-icons); 
+	transition: all  0.3s ease-in-out;
+} -->

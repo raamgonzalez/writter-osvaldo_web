@@ -21,7 +21,7 @@ type Social = {
 				<a class="contact__a" href={social.href} target="_blank">
 					{social.title.toUpperCase()}
 				</a>
-				<ButtonArrow rotate={true} type/>
+				<ButtonArrow classSvg={'button__svg button__svg--nobackground'}  classPath={'button__path--nobackground'}/>
 			</section>
 		))
 	}
@@ -47,9 +47,15 @@ type Social = {
 		border-radius: 5px;
 		border: 1px solid var(--color-primary);
 	}
+	.contact__container:hover{
+		background-color: var(--color-primary);
+	}
+
+	.contact__container:hover .contact__a{
+		color: var(--color-icons);
+	}
 	.contact__a{
-
-
+		width: 100%;
 		font-size: var(--font-size-medium);
 		font-family: var(--font-text);
 	}
