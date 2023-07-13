@@ -1,15 +1,11 @@
 ---
-import NavBar from '../components/NavBar.astro'
+import NavBar from './NavBar.tsx'
 import Logo from './Logo.astro';
 ---
 
 <section class="header">
-		<section class="header__title">
-			<h1 class="">Osvaldo Gonzalez Iglesias</h1>
-			<!-- <p class="">Escritor</p> -->
-		</section>
-		<!-- <NavBar/> -->
-		<Logo/>
+	<Logo/>
+	<NavBar/>
 </section>
 
 
@@ -33,8 +29,4 @@ import Logo from './Logo.astro';
 		margin: 0;
 		line-height: 1.2em;
 	}
-	/* .header__title p{
-		font-size: var(--font-size-medium);
-		font-family: var(--font-text);
-	} */
 </style>
