@@ -1,11 +1,11 @@
 ---
-import NavBar from './NavBar.tsx'
+import NavBar from './NavBar'
 import Logo from './Logo.astro';
 ---
 
 <section class="header">
 	<Logo/>
-	<NavBar/>
+	<NavBar client:load/>
 </section>
 
 

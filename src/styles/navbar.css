@@ -1,12 +1,54 @@
 .navbar{
-
 }
-
 
 .nav__open{
-	display: bloc;
+	transition: all 0.5s ease;
+	opacity: 1;
+	visibility: visible;    
 }
 
+/* Ver en web*/
 .nav__close{
-	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+
+	position: fixed;
+	z-index: 1;
+	top: -0.2%;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: aqua;
+}
+/* --fin de ver en web*/
+
+
+.nav__button--close{
+	text-align: right;
+	display: block;
+	position: absolute;
+	top: -0.5%;
+	right: 0;
+	margin: 24.5px 1.20rem 0 0;
+	padding: 0;
+}
+
+.nav__button--open{
+	display: block;
+}
+
+
+.nav__ul{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	text-align: center;
+	margin: 8rem 0 0 0;
+}
+
+.nav__button{
+	display: block;
+	text-decoration: none;
+	border: 0;
 }
