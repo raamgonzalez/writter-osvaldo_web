@@ -49,25 +49,47 @@ export default function NavBar() {
 
 
 	return (
-	<section className="navbar">
+		<>
 
-		<button className='nav__button--open nav__button'  onClick={() => {setIsOpen(!isOpen)}}><img src='/ui/hamburger_open.svg' /></button>
-		<nav className={isOpen? 'nav__open' : 'nav__close'}>
-				<button className='nav__button--close nav__button'  onClick={() => {setIsOpen(!isOpen)}}><img src='/ui/hamburger_close.svg' /></button>
-				<ul className="nav__ul">
-					{ navLinks.map((link) => {
-						return (
-							link.active && (
-							<li className="nav__li" key={link.id}>
-								<a className="nav__a" href={ link.href }>{ link.name }</a>
-							</li>
-							)
-						)
-					})
-					}
-				</ul>
-		</nav>
-	</section>
+
+			<section>
+				<button onClick={() => setIsOpen(!isOpen)} className='header__abrir navbar__button'><img src='/ui/hamburger_open.svg' /></button>
+      	<nav className={isOpen ? 'navbar navbar--visible' : 'navbar'}>
+					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button'><img className='navbar__img' src='/ui/hamburger_close.svg' /></button>
+						<ul className='nav__ul'>
+						{ navLinks.map((link) => {
+							return (
+									link.active && (
+									<li className="nav__li" key={link.id}>
+										<a className="nav__a" href={ link.href }>{ link.name }</a>
+									</li>
+									)
+								)
+							})
+						}
+						</ul>
+      	</nav>
+			</section>
+		</>
 	)
 }
 
+
+			// {/* <button className='nav__button--open nav__button'  onClick={() => {setIsOpen(!isOpen)}}><img src='/ui/hamburger_open.svg' /></button>
+			// <section className="navbar">
+
+			// 	<nav className={isOpen? 'nav__open' : 'nav__close'}>
+			// 			<button className='nav__button--close nav__button'  onClick={() => {setIsOpen(!isOpen)}}><img src='/ui/hamburger_close.svg' /></button>
+			// 			<ul className="nav__ul">
+			// 				{ navLinks.map((link) => {
+			// 					return (
+			// 						link.active && (
+			// 						<li className="nav__li" key={link.id}>
+			// 							<a className="nav__a" href={ link.href }>{ link.name }</a>
+			// 						</li>
+			// 						)
+			// 					)
+			// 				})
+			// 				}
+			// 			</ul>
+			// 	</nav> */}

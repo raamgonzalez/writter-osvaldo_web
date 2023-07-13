@@ -76,7 +76,7 @@ export const data = {
 			id: 2,
 			title: 'Jeuretche en sus laberintos',
 			content: 'Obra en tres actos, un actor, voz en off',
-			href: 'https://drive.google.com/file/d/1v04QeE-7wTaJZ3KV5JnALHfL3AFErgd0/view?usp=sharing',
+			href: '/notes/asi-habla-zaratustra',
 			important: true
 		},
 		{
