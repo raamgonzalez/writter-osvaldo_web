@@ -2,6 +2,7 @@
 import type { MarkdownLayoutProps } from 'astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro'
+import ButtonTop from '../components/ui/ButtonTop.astro';
 
 type Props = MarkdownLayoutProps<{
   // Define las propiedades frontmatter aquí
@@ -33,7 +34,8 @@ const { frontmatter, url } = Astro.props;
 			<p class="markdown__autor">By {frontmatter.author}</p>
 			<p class="markdown__date">{frontmatter.date}</p>
 			<slot />
-		</div>	
+		</div>
+		<ButtonTop/>
 		<Footer />
 	</body>
 </html>

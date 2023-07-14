@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { data } from '../../data/data';
+
+const { books } = data;
+
+
+type Book = {
+		id: number;
+		title: string;
+		href: string;
+		img: string;
+		issue: string;
+		description: string;
+};
+---
+
+
+<Layout title="OGI - Escritor">
+	<section class="books__page">
+		<h3>LIBROS</h3>
+	</section>
+	<ul class="books__ul">
+		{books.map((book:Book) => (
+			<li class="books__li">
+				<h4>{book.title}</h4>
+				<img src={book.img} alt={book.title} />
+				<p>{book.issue}</p>
+				<p>{book.description}</p>
+			</li>
+		))}
+	</ul>
+</Layout>
+
+
+<style>
+	.books__page {
+		margin: var(--margin-xlarge) 0 var(--margin-xlarge) 0;
+		height: fit-content;
+	}
+	.books__page h3{
+		font-size: var(--font-size-large);
+		margin: var(--margin-small) 0 0 0;
+	}
+	.books__ul{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 3rem;
+	}
+	.books__li{
+		/* margin: var(--margin-small) 0 0 0; */
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.books__li h4{
+		font-size: var(--font-size-large);
+	}
+	.books__li img{
+		width: 30rem;
+		object-fit: cover;
+	}
+</style>

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import { data } from '../../data/data';
+import ListOfNotes from '../../components/ListOfNotes.astro';
+const { notes } = data;
+
+type Note = {
+	id: number,
+	title: string,
+	content: string,
+	href: string,
+	important: boolean
+}
+---
+
+<Layout title="OGI - Escritor">
+	<section class="notes__page">
+		<h3>NOTAS</h3>
+		<ListOfNotes />
+	</section>
+</Layout>
+
+
+
+<style>
+	.notes__page {
+		margin: var(--margin-xlarge) 0 var(--margin-xlarge) 0;
+		height: fit-content;
+	}
+	.notes__page h3{
+		font-size: var(--font-size-large);
+		margin: var(--margin-small) 0 0 0;
+	}
+</style>

@@ -8,7 +8,10 @@ export const data = {
 			img: '/books/portada_ciudad-del-sol.jpg',
 			issue: 'Dramatico',
 			release: 2014,
-			description: 'lorem ipsum'
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate ultrices consequat. Suspendisse non quam vel nisl posuere ornare. Curabitur et blandit mi. Maecenas in dignissim nisi. Duis in mollis erat. Etiam cursus sit amet nisl a dictum. Nullam fringilla dignissim velit, non eleifend neque fringilla quis. Aenean eget ullamcorper libero. Etiam luctus faucibus iaculis. Ut interdum urna purus, quis scelerisque felis mollis id. Donec vel dui risus. In cursus sapien sem, id volutpat lacus tincidunt vitae.',
+			link01: '#',
+			link02: '#',
+			link03: '#'
 		},
 		{
 			id: 2,
@@ -17,7 +20,10 @@ export const data = {
 			img: '/books/portada_neurosis.png',
 			issue: 'Dramatico',
 			release: 2014,
-			description: 'lorem ipsum'
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate ultrices consequat. Suspendisse non quam vel nisl posuere ornare. Curabitur et blandit mi. Maecenas in dignissim nisi. Duis in mollis erat. Etiam cursus sit amet nisl a dictum. Nullam fringilla dignissim velit, non eleifend neque fringilla quis. Aenean eget ullamcorper libero. Etiam luctus faucibus iaculis. Ut interdum urna purus, quis scelerisque felis mollis id. Donec vel dui risus. In cursus sapien sem, id volutpat lacus tincidunt vitae.',
+			link01: '#',
+			link02: '#',
+			link03: '#'
 		},
 		{
 			id: 3,
@@ -26,7 +32,11 @@ export const data = {
 			img: '/books/portada_tierra-sin-mal.jpg',
 			issue: 'Dramatico',
 			release: 2014,
-			description: 'lorem ipsum'
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate ultrices consequat. Suspendisse non quam vel nisl posuere ornare. Curabitur et blandit mi. Maecenas in dignissim nisi. Duis in mollis erat. Etiam cursus sit amet nisl a dictum. Nullam fringilla dignissim velit, non eleifend neque fringilla quis. Aenean eget ullamcorper libero. Etiam luctus faucibus iaculis. Ut interdum urna purus, quis scelerisque felis mollis id. Donec vel dui risus. In cursus sapien sem, id volutpat lacus tincidunt vitae.',
+			link01: '#',
+			link02: '#',
+			link03: '#'
+			
 		},
 		{
 			id: 4,
@@ -35,7 +45,10 @@ export const data = {
 			img: '/books/portada_razones-seminales.jpg',
 			issue: 'Dramatico',
 			release: 2014,
-			description: 'lorem ipsum'
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate ultrices consequat. Suspendisse non quam vel nisl posuere ornare. Curabitur et blandit mi. Maecenas in dignissim nisi. Duis in mollis erat. Etiam cursus sit amet nisl a dictum. Nullam fringilla dignissim velit, non eleifend neque fringilla quis. Aenean eget ullamcorper libero. Etiam luctus faucibus iaculis. Ut interdum urna purus, quis scelerisque felis mollis id. Donec vel dui risus. In cursus sapien sem, id volutpat lacus tincidunt vitae.',
+			link01: '#',
+			link02: '#',
+			link03: '#'
 		},
 		{
 			id: 5,
@@ -44,7 +57,10 @@ export const data = {
 			img: '/books/portada_destellos-bajo-el-agua.jpg',
 			issue: 'Dramatico',
 			release: 2014,
-			description: 'lorem ipsum'
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate ultrices consequat. Suspendisse non quam vel nisl posuere ornare. Curabitur et blandit mi. Maecenas in dignissim nisi. Duis in mollis erat. Etiam cursus sit amet nisl a dictum. Nullam fringilla dignissim velit, non eleifend neque fringilla quis. Aenean eget ullamcorper libero. Etiam luctus faucibus iaculis. Ut interdum urna purus, quis scelerisque felis mollis id. Donec vel dui risus. In cursus sapien sem, id volutpat lacus tincidunt vitae.',
+			link01: '#',
+			link02: '#',
+			link03: '#'
 		}
 	],
 	phrases : [
@@ -69,7 +85,7 @@ export const data = {
 			id: 1,
 			title: 'Entrevista - Editorial Adarve',
 			content: 'Presentación Neurosis',
-			href: 'https://developer.mozilla.org/es/docs/Web/HTML/Element/button',
+			href: 'https://editorialadarveblog.blogspot.com/2018/06/entrevista-osvaldo-gonzalez-iglesias.html',
 			important: true
 		},
 		{
@@ -83,35 +99,35 @@ export const data = {
 			id: 3,
 			title: 'Borges en sus laberintos',
 			content: 'Obra de teatro',
-			href: 'https://drive.google.com/file/d/1_a52eZYW1oX43qnCzr8mJJXfbi8wacwl/view?usp=sharing',
+			href: '/notes/borges-en-sus-laberintos',
 			important: true
 		},
 		{
 			id: 4,
 			title: 'Así hablo Zaratusta',
 			content: 'Nota editorial',
-			href: 'https://drive.google.com/file/d/1KgCidi-YJ-roLBJyH6mp90os1KnPGkxm/view?usp=sharing',
+			href: '/notes/asi-habla-zaratustra',
 			important: true
 		},
 		{
 			id: 5,
 			title: 'Donde cobijo la mirada',
 			content: 'Poema del autor',
-			href: 'https://drive.google.com/file/d/1_Qw-LXhqzgQozlirIfPb4leRndOHs7wp/view?usp=sharing',
+			href: '/notes/donde-cobijo-la-mirada',
 			important: true
 		},
 		{
 			id: 6,
 			title: 'Ya no vuelvas',
 			content: 'Poema del autor',
-			href: 'https://drive.google.com/file/d/19Q3uK1tUCp9TyviSxN0EGsO16fvxGUmm/view?usp=sharing',
+			href: '/notes/ya-no-vuelvas',
 			important: true
 		},
 		{
 			id: 6,
 			title: 'Soy Nietzsche',
 			content: 'Obra de teatro',
-			href: 'https://drive.google.com/file/d/1MPysv5GUxtfPsHSSt6luNu5NFdpGsMiX/view?usp=sharing',
+			href: '/notes/soy-nietzsche',
 			important: true
 		}
 	],
@@ -147,20 +163,20 @@ export const data = {
 		},
 		{
 			id: 2,
-			title: 'Facebook',
-			href: 'https://www.facebook.com/Adarve-Ediciones-106385984031',
+			title: 'LinkedIn',
+			href: 'https://www.linkedin.com/in/osvaldo-gonzalez-1354a8a8/',
 			state: true
 		},
 		{
 			id: 3,
 			title: 'Twitter',
-			href: 'https://twitter.com/AdarveEdiciones',
+			href: 'https://twitter.com/Debateyconverg1',
 			state: true
 		},
 		{
 			id: 4,
 			title: 'Instagram',
-			href: 'https://www.instagram.com/adarveediciones/',
+			href: 'https://www.instagram.com/osvaldogonzalez99/',
 			state: true
 		},
 	]
