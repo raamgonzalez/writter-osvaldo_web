@@ -1,0 +1,13 @@
+
+.progress{
+	position: relative;
+	background-color: #00534b3d;
+	height: 5px;
+}
+
+.progress-bar {
+	margin: 2rem 0 0 0;
+  height: 5px;
+  background: var(--color-primary);
+  transform-origin: 0%;
+}
