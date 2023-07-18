@@ -4,12 +4,6 @@
 .films h2{
 	font-size: var(--font-size-large);
 }
-.films__container{
-	margin: var(--margin-small) 0 0 0;
-	display: flex;
-	gap: 1rem;
-	overflow-x: scroll;
-}
 .films__img{
 	object-fit: cover;
 	min-width: 335px;
@@ -19,4 +13,19 @@
 .films__img:hover{
 	filter: grayscale(70%);
 	transition: all 0.5s ease-in-out;
+}
+
+.films__container{
+	margin: var(--margin-small) 0 0 0;
+	display: flex;
+	gap: 1rem;
+	overflow-x: scroll;
+}
+
+.films__container::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+}
+.films__container::-webkit-scrollbar-track{
+	background-color: transparent;
 }

@@ -32,7 +32,7 @@ export default function Films() {
 			<ul className="films__container" ref={ref}>
 				{
 				films.map((film: Film) => (
-					<a href={film.href} target="_blank"><img src={film.poster} className="films__img"/></a>
+					<a key={film.id} href={film.href} target="_blank"><img src={film.poster} className="films__img"/></a>
 				))
 				}
 			</ul>

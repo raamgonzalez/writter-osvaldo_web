@@ -19,7 +19,7 @@ type Note = {
 		note.important &&
 		<section class="note__section">
 			<section class="note__singular">
-				<h3>{note.title}</h3>
+				<a href={note.href}>{note.title}</a>
 				<p>{note.content}</p>
 			</section>
 			<ButtonArrow href={note.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'} redirect={false}/>
