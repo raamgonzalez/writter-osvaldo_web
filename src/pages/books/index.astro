@@ -1,17 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { data } from '../../data/data';
+import ButtonArrow from '../../components/ui/ButtonArrow.astro'
 
 const { books } = data;
 
 
 type Book = {
+	id: number;
+	title: string;
+	href: string;
+	img: string;
+	issue: string;
+	release: number;
+	description: string;
+	links: {
 		id: number;
-		title: string;
 		href: string;
-		img: string;
-		issue: string;
-		description: string;
+		store: string;
+	}[];	
 };
 ---
 
@@ -25,17 +32,31 @@ type Book = {
 			<li class="books__li">
 				<h4>{book.title}</h4>
 				<img src={book.img} alt={book.title} />
-				<p>{book.issue}</p>
+				<section class="books__li--container">
+					<p><span>Género:  </span> {book.issue}</p>
+					<p><span>Año públicación:  </span> {book.release}</p>
+				</section>
 				<p>{book.description}</p>
+				<section class="books__li--links">
+					{
+						book.links.map((link) => (
+							link.href && link.store &&(
+								<a href={link.href} target="_blank" rel="noopener noreferrer">COMPRAR <span> en {link.store}</span></a>
+								// <ButtonArrow href={link.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'} redirect={false}/>	
+							)
+						))
+					}
+				</section>
 			</li>
 		))}
+
 	</ul>
 </Layout>
 
 
 <style>
 	.books__page {
-		margin: var(--margin-xlarge) 0 var(--margin-xlarge) 0;
+		margin: var(--margin-xlarge) 0 var(--margin-large) 0;
 		height: fit-content;
 	}
 	.books__page h3{
@@ -66,6 +87,51 @@ type Book = {
 	.books__li p{
 		font-size: var(--font-size-medium);
 		font-family: var(--font-base);
+		font-weight: 100;
+	}
+
+	.books__li--container{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.books__li--container p{
+		font-family: var(--font-base);
+		font-size: var(--font-size-medium);
+	}
+	.books__li--container p span{
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 1px;
+	}
+
+	.books__li--links{
+		display: grid;
+		place-items: center;
+		text-align: center;
+		gap: 1rem;
+	}
+	.books__li--links a{
+		margin: var(--margin-small) 0 0 0;
+		font-size: var(--font-size-small);
+		font-family: var(--font-text);
+		font-weight: bold;
+		padding: 0.5rem;
+
+		width: 100%;
+		border-radius: 5px;
+		border: 1px solid var(--color-primary);
+	}
+	.books__li--links a:hover{
+		background-color: var(--color-primary);
+		color: var(--color-background);
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	}
+	.books__li--links a span{
+		font-size: var(--font-size-small);
+		font-style: italic;
 		font-weight: 300;
 	}
+
+
 </style>
