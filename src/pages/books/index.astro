@@ -42,7 +42,6 @@ type Book = {
 						book.links.map((link) => (
 							link.href && link.store &&(
 								<a href={link.href} target="_blank" rel="noopener noreferrer">COMPRAR <span> en {link.store}</span></a>
-								// <ButtonArrow href={link.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'} redirect={false}/>	
 							)
 						))
 					}
@@ -88,6 +87,7 @@ type Book = {
 		font-size: var(--font-size-medium);
 		font-family: var(--font-base);
 		font-weight: 100;
+		letter-spacing: 0.5px;
 	}
 
 	.books__li--container{
