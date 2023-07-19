@@ -45,6 +45,11 @@ type Note = {
 		font-family: var(--font-text);
 	}
 
+	.note a{
+		font-size: var(--font-size-medium);
+		font-family: var(--font-base);
+	}
+
 	.note__section{
 		display: flex;
 		flex-direction: row;
@@ -73,6 +78,26 @@ type Note = {
 		font-size: var(--font-size-medium);
 		letter-spacing: 0px;
 	}
+
+	@media (min-width: 768px) {
+
+	.note{
+		margin: var(--margin-small) 0 0 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	.note__section{
+		display: flex;
+		flex-direction: column;
+		place-items: flex-start;
+	}
+
+	.note a:hover{
+		text-decoration: underline;	
+	}
+
+}
 
 </style>
 

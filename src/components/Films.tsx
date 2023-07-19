@@ -23,7 +23,7 @@ export default function Films() {
   const { scrollXProgress } = useScroll({ container: ref });
 
 	return (
-		<section className="films">
+		<section className="films">pla
 			<h2>FILMOTECA</h2>
 			<LineH/>
 			<div className='progress'>

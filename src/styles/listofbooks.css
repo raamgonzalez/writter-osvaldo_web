@@ -38,3 +38,13 @@
 .books__swipe::-webkit-scrollbar-track{
 	background-color: transparent;
 }
+
+
+
+@media (1280px <= width <= 2000px) {
+	.books__swipe img{
+		width: 300px;
+		min-height: 298px;
+		object-fit: cover;
+	}
+}

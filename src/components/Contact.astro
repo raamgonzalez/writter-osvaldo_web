@@ -21,7 +21,7 @@ type Social = {
 				<a class="contact__a" href={social.href} target="_blank">
 					{social.title.toUpperCase()}
 				</a>
-				<ButtonArrow href? classSvg={'button__svg button__svg--nobackground'}  classPath={'button__path--nobackground'}/>
+				<ButtonArrow classSvg={'button__svg button__svg--nobackground'}  classPath={'button__path--nobackground'}/>
 			</section>
 		))
 	}
@@ -58,5 +58,14 @@ type Social = {
 		width: 100%;
 		font-size: var(--font-size-medium);
 		font-family: var(--font-text);
+	}
+
+	@media (min-width: 768px) {
+
+		.contact__container{
+			padding: 1.5rem 0.5rem;
+		}
+
+
 	}
 </style>

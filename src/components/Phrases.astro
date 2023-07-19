@@ -27,7 +27,7 @@ const randomPhrase:Phrase = phrases[Math.floor(Math.random() * phrases.length)];
 
 <style>
 	.phrase{
-		margin: var(--margin-large) 0 0 0;
+		margin: var(--margin-xlarge) 0 var(--margin-xlarge) 0;
 		width: 100%;
 	}
 
@@ -47,5 +47,13 @@ const randomPhrase:Phrase = phrases[Math.floor(Math.random() * phrases.length)];
 		font-size: var(--font-size-small);
 	}
 
+
+	@media (min-width: 768px) {
+  
+	.phrase__quote p{
+		line-height: 4rem;
+	}
+
+	}
 </style>
 

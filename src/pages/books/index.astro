@@ -29,8 +29,8 @@ type Book = {
 	</section>
 	<ul class="books__ul">
 		{books.map((book:Book) => (
+			<h4>{book.title}</h4>
 			<li class="books__li">
-				<h4>{book.title}</h4>
 				<img src={book.img} alt={book.title} />
 				<section class="books__li--container">
 					<p><span>Género:  </span> {book.issue}</p>
@@ -69,14 +69,15 @@ type Book = {
 		justify-content: flex-start;
 		gap: 3rem;
 	}
+
+	.books__ul h4{
+		font-size: var(--font-size-large);
+	}
 	.books__li{
 		/* margin: var(--margin-small) 0 0 0; */
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-	}
-	.books__li h4{
-		font-size: var(--font-size-large);
 	}
 	.books__li img{
 		width: 30rem;
@@ -133,5 +134,41 @@ type Book = {
 		font-weight: 300;
 	}
 
+	@media (1280px <= width <= 2000px) {
+		.books__ul{
+			width: 70rem;
+		}
+
+			.books__li{
+				display: flex;
+				flex-direction: row;
+				gap: 1rem;
+			}
+			.books__li img{
+			width: 20rem;
+			object-fit: cover;
+		}
+			.books__li p{
+			font-size: var(--font-size-small);
+			font-family: var(--font-base);
+			font-weight: 100;
+			letter-spacing: 0.5px;
+		}
+			.books__li--container p{
+			font-family: var(--font-base);
+			font-size: var(--font-size-small);
+		}
+			.books__li--links{
+			margin: var(--margin-small) 0 0 0;
+			font-size: var(--font-size-small);
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+		}
+		.books__li--links a{
+		font-size: var(--font-size-small);
+		width: 40%;
+	}
+	}
 
 </style>

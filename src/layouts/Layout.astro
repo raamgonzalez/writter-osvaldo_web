@@ -52,9 +52,9 @@ const { title } = Astro.props;
 	--font-base: 'Oswald', sans-serif;
 	--font-text: 'Belleza', sans-serif; 
 
-	--font-size-large: 31px;
-	--font-size-medium: 20px;
-	--font-size-small: 16px;
+	--font-size-large: clamp(31px,4vw,50px);
+	--font-size-medium: clamp(20px,3vw,40px);
+	--font-size-small: clamp(16px,1.5vw,25px);
 }
 
 	html {
@@ -70,4 +70,36 @@ const { title } = Astro.props;
 		height: 100vh;
 		padding: var(--margin-small) var(--margin-small);
 	}
+
+
+
+/* @media (min-width: 996px) {
+
+	body{
+		padding: 40px 30rem;
+	}
+
+} */
+@media (768px <= width <= 996px) {
+
+	body{
+		padding: 40px 10rem;
+	}
+
+}
+
+@media (996px <= width <= 1280px) {
+
+	body{
+		padding: 40px 15rem;
+	}
+
+}
+
+@media (1280px <= width <= 1920px) {
+	body{
+		padding: 40px 20rem;
+	}
+
+}
 </style>

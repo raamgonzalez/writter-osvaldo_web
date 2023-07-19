@@ -15,7 +15,7 @@
 .circle__container{
 	position: fixed;
 	bottom: 2rem;
-	right: 2rem;
+	right: 1rem;
 	z-index: 100;
 }
 
@@ -30,5 +30,21 @@
 .circle__button img {
 	transform: rotate(180deg);
 	width: 3rem;
+}
+
+
+@media (1280px <= width <= 1920px) {
+	.circle__container{
+	position: fixed;
+	bottom: 2rem;
+	right: 20rem;
+	z-index: 1;
+	}
+
+	.circle__button img {
+	transform: rotate(180deg);
+	width: 4rem;
+	}
+
 }
 </style>

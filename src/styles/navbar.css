@@ -44,8 +44,38 @@
 
 
 .navbar__button{
-text-decoration: none;
-border: 0;
-background-color: transparent;
-font-size: 2.5rem;
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	font-size: 2.5rem;
+}
+
+@media (1280px <= width <= 2000px) {
+
+	.navbar__button{
+		display: none;
+	}
+
+	.nav__ul{
+		display: flex;
+		gap: 1.5rem;
+
+	}
+	.nav__li{
+		display: block;
+		visibility: visible;
+	}
+	.nav__a{
+		display: block;
+		visibility: visible;
+	}
+	.navbar{
+		visibility: visible;
+		opacity: 1;
+		height: auto;
+		transition: all 0.5s ease-in-out;
+		position: relative;
+		background-color: transparent;
+		padding: 0;
+	}
 }

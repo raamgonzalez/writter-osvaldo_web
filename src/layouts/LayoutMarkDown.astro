@@ -92,7 +92,7 @@ const { frontmatter, url } = Astro.props;
 	}
 
 	.markdown__container h2{
-		font: var(--font-size-large) var(--font-base);
+		font-size: var(--font-size-large) var(--font-base);
 		margin: var(--margin-large) 0 var(--margin-small) 0;
 	}
 
@@ -109,7 +109,6 @@ const { frontmatter, url } = Astro.props;
 		margin: 16px 0 16px 0;
 	}
 
-
 	.markdown__title{
 		font-size: var(--font-size-large);
 		margin: var(--margin-large) 0 var(--margin-small) 0;
@@ -119,5 +118,23 @@ const { frontmatter, url } = Astro.props;
 		margin: 0 0 var(--margin-large) 0;
 	}
 
+
+	@media (min-width: 768px) {
+  
+	body{
+		padding: 80px 30rem;
+	}
+}
+
+	@media (1280px <= width <= 2000px) {
+
+		.markdown__container{
+		text-wrap: wrap;
+	}
+		.markdown__container p{
+			font-size: var(--font-size-medium);
+			font-weight: 100;
+		}
+	}
 
 </style>
