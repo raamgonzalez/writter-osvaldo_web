@@ -18,10 +18,10 @@ type Note = {
 	{notes.map((note:Note) => (
 		note.important &&
 		<section class="note__section">
-			<section class="note__singular">
-				<a href={note.href}>{note.title}</a>
+			<a href={note.href} class="note__singular">
+				<p>{note.title}</p>
 				<p>{note.content}</p>
-			</section>
+			</a>
 			<ButtonArrow href={note.href} classSvg={'button__svg button__svg--background'}  classPath={'button__path--background'} redirect={false}/>
 		</section>
 	))}
@@ -59,7 +59,6 @@ type Note = {
 
 	.note__section--noshow{
 		display: none;
-		
 	}
 
 	.note__button{
@@ -79,6 +78,13 @@ type Note = {
 		letter-spacing: 0px;
 	}
 
+	.note__singular p:first-child{
+		font-family: var(--font-base);
+		font-size: var(--font-size-medium);
+		font-weight: 500;
+	}
+
+
 	@media (min-width: 768px) {
 
 	.note{
@@ -92,11 +98,18 @@ type Note = {
 		flex-direction: column;
 		place-items: flex-start;
 	}
-
-	.note a:hover{
-		text-decoration: underline;	
+}
+@media (1280px <= width <= 2000px) {
+	.note__singular{
+		width: 100%;
+		padding: 0.5rem 0.5rem;
+		border-radius: 5px;
 	}
-
+	.note__singular:hover{
+		background-color: var(--color-primary);
+		color: var(--color-background);
+		transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+	}
 }
 
 </style>

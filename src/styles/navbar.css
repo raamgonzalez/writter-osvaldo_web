@@ -34,6 +34,7 @@
 }
 .nav__a{
 	font-size: 2rem;
+	
 }
 
 .navbar--visible{
@@ -48,6 +49,18 @@
 	border: 0;
 	background-color: transparent;
 	font-size: 2.5rem;
+}
+
+.nav__li{
+	padding: 0.3rem 0.5rem;
+}
+
+.nav__li:hover{
+	background-color: var(--color-primary);
+	color: var(--color-background);
+	padding: 0.3rem 0.5rem;
+	transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
+	border-radius: 5px;
 }
 
 @media (1280px <= width <= 2000px) {

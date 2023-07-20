@@ -32,12 +32,13 @@ type Book = {
 			<h4>{book.title}</h4>
 			<li class="books__li">
 				<img src={book.img} alt={book.title} />
-				<section class="books__li--container">
-					<p><span>Género:  </span> {book.issue}</p>
-					<p><span>Año públicación:  </span> {book.release}</p>
-				</section>
-				<p>{book.description}</p>
-				<section class="books__li--links">
+				<section class="books__li--complete">
+					<section class="books__li--container">
+						<p><span>Género:  </span> {book.issue}</p>
+						<p><span>Año públicación:  </span> {book.release}</p>
+					</section>
+					<p class="books__li--margin">{book.description}</p>
+					<section class="books__li--links">
 					{
 						book.links.map((link) => (
 							link.href && link.store &&(
@@ -45,8 +46,10 @@ type Book = {
 							)
 						))
 					}
+					</section>
 				</section>
 			</li>
+
 		))}
 
 	</ul>
@@ -65,8 +68,8 @@ type Book = {
 	.books__ul{
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
 		justify-content: flex-start;
+		flex-wrap: wrap;
 		gap: 3rem;
 	}
 
@@ -98,12 +101,15 @@ type Book = {
 	
 	.books__li--container p{
 		font-family: var(--font-base);
-		font-size: var(--font-size-medium);
 	}
 	.books__li--container p span{
 		font-style: normal;
 		font-weight: 400;
 		letter-spacing: 1px;
+	}
+
+	.books__li--margin{
+		margin: var(--margin-small) 0 0 0;
 	}
 
 	.books__li--links{
@@ -114,6 +120,7 @@ type Book = {
 		gap: 1rem;
 	}
 	.books__li--links a{
+
 		font-size: var(--font-size-small);
 		font-family: var(--font-text);
 		font-weight: bold;
@@ -136,16 +143,31 @@ type Book = {
 
 	@media (1280px <= width <= 2000px) {
 		.books__ul{
-			width: 70rem;
-		}
+			width: 100%;
 
+		}
+		
 			.books__li{
 				display: flex;
 				flex-direction: row;
 				gap: 1rem;
+				
+			}
+			.books__li--complete{
+				margin: 0 0 0 var(--margin-small);
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				gap: 3rem;
+			}
+
+			.books__li--container{
+				display: flex;
+				flex-direction: row;
+				gap: 5rem;
 			}
 			.books__li img{
-			width: 20rem;
+			min-width: 25rem;
 			object-fit: cover;
 		}
 			.books__li p{
@@ -158,17 +180,20 @@ type Book = {
 			font-family: var(--font-base);
 			font-size: var(--font-size-small);
 		}
+
 			.books__li--links{
 			margin: var(--margin-small) 0 0 0;
 			font-size: var(--font-size-small);
+	
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction: row;
 			gap: 1rem;
 		}
 		.books__li--links a{
-		font-size: var(--font-size-small);
-		width: 40%;
-	}
+			font-size: var(--font-size-small);
+			width:100%;
+		}
 	}
 
 </style>
