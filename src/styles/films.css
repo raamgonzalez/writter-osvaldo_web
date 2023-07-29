@@ -40,6 +40,7 @@
 	background-color: var(--color-background);
 	border-radius: 5px;
 	padding: 1rem 2rem;
+
 	transition: all 0.5s ease-in-out;
 }
 
@@ -50,6 +51,7 @@
 	font-size: var(--font-size-small);
 	visibility: hidden;
 	padding: 1rem 2rem;
+	width: 100%;
 	transition: all 0.5s ease-in-out;
 }
 
