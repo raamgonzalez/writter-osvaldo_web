@@ -1,5 +1,5 @@
 .books{
-	margin: var(--margin-xlarge) 0 0 0;
+	margin: var(--margin-sections) 0 0 0;
 }
 .books h2{
 	font-size: var(--font-size-large);

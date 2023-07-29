@@ -241,18 +241,24 @@ export const data = {
 		},
 		{
 			id: 2,
+			title: 'Radio Zonica - Debate y Convergencia',
+			href: 'https://www.radiozonica.com.ar/#!/home',
+			state: true
+		},
+		{
+			id: 3,
 			title: 'LinkedIn',
 			href: 'https://www.linkedin.com/in/osvaldo-gonzalez-1354a8a8/',
 			state: true
 		},
 		{
-			id: 3,
+			id: 4,
 			title: 'Twitter',
 			href: 'https://twitter.com/Debateyconverg1',
 			state: true
 		},
 		{
-			id: 4,
+			id: 5,
 			title: 'Instagram',
 			href: 'https://www.instagram.com/osvaldogonzalez99/',
 			state: true

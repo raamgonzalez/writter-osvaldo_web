@@ -1,0 +1,44 @@
+
+---
+import BackQuotes from './ui/BackQuotes.astro';
+---
+
+<section class="phrase">
+	<section class="phrase__quote">
+		<BackQuotes/>
+			<p>Todos pasamos por ese filtro amor, culpa y reparación, en nuestro crecimiento psíquico</p>
+			<span>Osvaldo González Iglesias</span>
+	</section>
+</section>
+
+<style>
+	.phrase{
+		margin: var(--margin-xlarge) 0 var(--margin-xlarge) 0;
+		width: 100%;
+	}
+
+	.phrase__quote{
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.phrase__quote p{
+		font-size: var(--font-size-large);
+		font-weight: 300;
+		line-height: 2.5rem;
+	}
+	.phrase__quote span{
+		font-size: large;
+		font-size: var(--font-size-small);
+	}
+
+
+	@media (min-width: 768px) {
+  
+	.phrase__quote p{
+		line-height: 4rem;
+	}
+
+	}
+</style>

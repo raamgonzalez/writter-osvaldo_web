@@ -1,5 +1,5 @@
 .films{
-	margin: var(--margin-xlarge) 0 0 0;
+	margin: var(--margin-sections) 0 0 0;
 }
 .films h2{
 	font-size: var(--font-size-large);
