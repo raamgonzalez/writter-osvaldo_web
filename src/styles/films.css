@@ -24,7 +24,6 @@
 }
 
 .films__container::-webkit-scrollbar{
-	width: 5px;
 	height: 5px;
 }
 .films__container::-webkit-scrollbar-track{

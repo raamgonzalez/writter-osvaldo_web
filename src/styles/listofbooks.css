@@ -14,6 +14,16 @@
 	gap: 1rem;
 	scroll-behavior: smooth;
 }
+
+.books__swipe::-webkit-scrollbar{
+	height: 5px;
+}
+.books__swipe::-webkit-scrollbar-track{
+	background-color: transparent;
+}
+
+
+
 .books__a{
 	position: relative;
 	width: 100%;
@@ -67,5 +77,12 @@
 
 	.books__a{
 		min-width: auto;
+	}
+
+	.books__swipe::-webkit-scrollbar{
+		width: 1px;
+	}
+	.books__swipe::-webkit-scrollbar-track{
+		background-color: var(--color-icons);
 	}
 }
