@@ -20,6 +20,19 @@ type Book = {
 		store: string;
 	}[];	
 };
+
+const checkSortBooks = (a: Book, b: Book) => {
+	if (a.release > b.release) {
+		return -1;
+	}
+	if (a.release < b.release) {
+		return 1;
+	}
+	return 0;
+};
+
+const sortsBook = books.sort(checkSortBooks);
+
 ---
 
 
@@ -29,9 +42,13 @@ type Book = {
 	</section>
 	<ul class="books__ul">
 		{books.map((book:Book) => (
-			<h4>{book.title}</h4>
+			<h4 id={book.title}>{book.title}</h4>
 			<li class="books__li">
-				<img src={book.img} alt={book.title} />
+				<div class="book-container">
+					<div class="book">
+						<img src={book.img} alt={book.title} />
+					</div>
+				</div>
 				<section class="books__li--complete">
 					<section class="books__li--container">
 						<p><span>Género:  </span> {book.issue}</p>
@@ -196,4 +213,8 @@ type Book = {
 		}
 	}
 
+
 </style>
+
+
+
