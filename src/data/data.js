@@ -156,7 +156,7 @@ export const data = {
 			id: 2,
 			title: 'Jeuretche en sus laberintos',
 			content: 'Obra en tres actos, un actor, voz en off',
-			href: '/notes/asi-habla-zaratustra',
+			href: '/notes/jauretche-en-sus-laberintos',
 			important: true
 		},
 		{

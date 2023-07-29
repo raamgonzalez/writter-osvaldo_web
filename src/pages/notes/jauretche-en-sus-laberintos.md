@@ -6,11 +6,18 @@ description: Obra de teatro de Nietzche llamada "Jauretche en sus laberintos"
 date: '02/05/2023'
 ---
 
+## **Nota del Autor:**
+
+"Jauretche en sus laberintos" es una obra de teatro que nos lleva por un recorrido de la historia argentina a través de un diálogo entre el líder político Juan Domingo Perón y el escritor Arturo Jauretche en el despacho presidencial de la Casa de Gobierno. La obra cubre cuarenta años de historia, incluyendo los momentos más significativos del peronismo, y nos muestra los aciertos y errores del movimiento y su impacto en la sociedad argentina.
+La obra, que dura 40 minutos, es interpretada por un solo actor que cambia su perfil y su voz para representar a los diferentes personajes, incluyendo a Perón con sus rasgos más característicos y pensamientos más profundos. Aunque la obra es crítica en algunos momentos, el mensaje principal es el anhelo de justicia que sigue vivo en el corazón del pueblo argentino.
+"Jauretche en sus laberintos" es una obra que debería ser vista en las universidades y escuelas como una herramienta de debate sobre la historia argentina y el peronismo, sin ningún tipo de pre conceptos ni influencia ideológica. La obra seguramente despertará sentimientos profundos de respeto y apego hacia la convulsionada historia argentina y su gente.
+
 
 
 ******************
 
-## **ACTO I**
+
+### **ACTO I**
 
 **(Obra en tres actos, un actor, voz en off)**
 Un salón de los años cincuenta, roble, sillones de cuero y una gran biblioteca, un escritorio inmenso lleno de papeles y algunos cuadros, uno en el centro de Evita, otro de San Martín y de Rosas. Cortinas de terciopelo rojas tapan unas enormes ventanas cerradas, una tercera, en el centro de doble hoja está abierta, deja entrar un creciente murmullo de multitudes que parecen aproximarse, discordante va tomando armonía para dar forma a algunos cánticos, mezclados con los bocinazos y al zumbido de alguna ambulancia, suaves aunque se suaviza tras el diálogo que fluye entre los dos hombres que acaban de encontrarse luego de varios meces, hombres corpulentos, de porte noble, ambos con un cigarrillo entre los dedos.

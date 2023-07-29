@@ -9,7 +9,7 @@ date: '02/05/2023'
 
 ********
 
-## **I Acto**
+### **I Acto**
 
 Tercero - Un lugar en penumbras atravesado por una luz polvorienta que llega desde la calle desde un ventanal que se encuentra a la derecha. El cuerpo de Borges encorvado sobre una pila de libros gruesos, concentrado en quién sabe qué dicotomía, al abismo al que era arrastrado por una lucidez que poco a poco empaña su esperanza sobre el destino de su patria.
 
@@ -35,7 +35,7 @@ De pronto una voz ronca y cansina se impuso ante el asombro del bibliotecaria, l
 
 **Perón** – Ustedes creen vivir en una nube en donde solo reina la levedad y la inocencia que trae consigo los pensamientos puros, la libertad, y eso de que la historia universal es la de un solo hombre. Ustedes no hablan de igualdad, ni de justicia, ni de pueblo. Su mirada José Luís está empañado de sueños ficticios.
 
-## **II**  **Acto**
+### **II**  **Acto**
 
 Tercero - Borges se apoya en su bastón y camina hacia uno de los pasillos de la biblioteca, de entro los anaqueles extrae un libro que luego le entrega a Perón que a esta altura se había encendido un cigarrillo, contempla absorto, con el tiempo detenido en su entorno, los libros que lo sujetan entre miles de palabras, hacia ese enmarañada mundo de confusión de quienes volcaron en millones de frases, un sentimiento tabicado por la desazón de no encontrar la palabras adecuada para por fin expresar sus más agudos pegamentos.
 
