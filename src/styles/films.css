@@ -24,7 +24,7 @@
 }
 
 .films__container::-webkit-scrollbar{
-	height: 5px;
+	height: 10px;
 }
 .films__container::-webkit-scrollbar-track{
 	background-color: transparent;
@@ -41,6 +41,10 @@
 	padding: 1rem 2rem;
 
 	transition: all 0.5s ease-in-out;
+}
+
+.films__container a img{
+	box-shadow: 0  1px 3px 2px var(--color-icons);
 }
 
 .films__title{

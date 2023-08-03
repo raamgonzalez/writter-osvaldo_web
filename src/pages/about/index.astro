@@ -3,18 +3,20 @@ import Layout from '../../layouts/Layout.astro';
 const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió tres novelas "La ciudad del sol", "Neurosis", "Tierra Sin MaL", obras de teatro como "Jauretche en sus laberintos", "Borges en sus laberintos", etc. Editor del periódico digital "Debate y Convergencia" y abreva sobre filosofia en Radio Zonica.'
 ---
 
-<Layout title="OGI - Acerca">
+<Layout title="OGIglesias - Acerca">
 	<section class="about__page">
 		<h3>ACERCA DE MÍ</h3>
-		<img src="./profile/profile_01.jpg">
-		<p>Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió tres novelas <span>"La ciudad del sol"</span> , <span>"Neurosis"</span> , <span>"Tierra Sin Mal"</span> , obras de teatro como <span>"Jauretche en sus laberintos"</span> , <span>"Borges en sus laberintos"</span> , etc. Editor del periódico digital <span>"Debate y Convergencia"</span> y abreva sobre filosofia en Radio Zonica.</p>
+		<section class="about__profile">
+			<img src="./profile/profile_01.jpg">
+			<p>Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió tres novelas <span>"La ciudad del sol"</span> , <span>"Neurosis"</span> , <span>"Tierra Sin Mal"</span> , obras de teatro como <span>"Jauretche en sus laberintos"</span> , <span>"Borges en sus laberintos"</span> , etc. Editor del periódico digital <span>"Debate y Convergencia"</span> y abreva sobre filosofia en Radio Zonica.</p>
+		</section>
 	</section>
 </Layout>
 
 
 <style>
 	.about__page {
-		margin: var(--margin-xlarge) 0 var(--margin-large) 0;
+		margin: var(--margin-sections) 0 var(--margin-sections) 0;
 		height: fit-content;
 	}
 	.about__page h3{
@@ -32,6 +34,17 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 
 		font-weight: 300;
 		color: var(--color-secondary);
+	}
+
+	.about__profile{
+		display: flex;
+		gap: 2rem;
+	}
+	.about__profile img {
+		width: 45rem;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		margin: var(--margin-small) 0 var(--margin-large) 0;
 	}
 
 	@media (1280px <= width <= 2000px) {

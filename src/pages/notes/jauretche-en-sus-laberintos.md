@@ -80,7 +80,7 @@ El pueblo no es toto, no se deja engañar, usted cree que si no llenarían hoy l
 
 - Pues usted si que es un terco, como construir un país, un futuro venturoso con tantas dudas. Bueno por momento, usando su prédica, olvido que es radical, un pequeño burgués llenos de inseguridades, ustedes no tienen clase que los defina, híbridos son, eso, unos híbridos.
 
-## **ACTO II**
+### **ACTO II**
 
 Los gritos que penetran por la ventana son ahora mas intenso, continuos y eufóricos, Jaureche sentado sobre un gran sillón de cuero negro observa al general que de una cierta distancia saluda con su habitual movimiento de brazos a la multitud. Pensó Jauretche cuando vio esa escena, es como si necesitara recordar que él es Peón, que es el líder, que tiene el poder de hacer vibrar a la masa cuando lo requiera. Peron regresa y lo observa a su amigo radical como dejó caer su cuerpo en el sillón como quien desmoronado teme estar dando el paso equivocado.
 
@@ -128,7 +128,7 @@ Jaureche tiene en su mano el libro "La Comunidad Organizada" repasa sus textos, 
 
 - Ya no me fastidie y escuche el tronar de las masas, inermes pero poderosas, maleable a las necesidades de la nación. No entiende, nunca me olvidaran, nadie como yo los puso en el centro de la historia, nadie les dio un lugar, nadie, escuche bien joven, nadie más lo hará, por eso jamás me olvidarán.
 
-**ACTO III (Último)**
+### **ACTO III (Último)**
 
 Arturo Jaureche observa al hombre del que observa tras las cortinas ahora entornadas a la multitud, tratando de divisar, al parecer caras conocidas, la CGT con Richi, lo ve ahí justo en su lugar, bajo el monumento nacional, lo ve a Gullo, a Jessi, a Obregón Cano, a Norma Kennedy, estaban todos, Vaca Narvaja, Cámpora con su gorrita de golf, Lastiri, López Rega, Isabelita. Evita ya estaba muerta, y su cadáver perdido en algún lugar escondido por los milicos.
 

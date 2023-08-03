@@ -34,7 +34,7 @@ export default function Films() {
 				films.map((film: Film) => (
 					<a key={film.id} href={film.href} target="_blank">
 						<img src={film.poster} className="films__img"/>
-						<p class='films__title'>{film.title}</p>
+						<p className='films__title'>{film.title}</p>
 					</a>
 				))
 				}

@@ -34,9 +34,9 @@ export default function ListOfBooks() {
 				</div>
 				<ul className="books__swipe" ref={ref}>
 					{books.map((book: Book) => (
-						<a class='books__a' href={`/books/#${book.title}`} key={book.id} target="_blank">
-							<img class='books__img' src={book.img} alt={`Imagen de portada de libro ${book.title}`}/>
-							<p class='books__title'>{book.title}</p>
+						<a className='books__a' href={`/books/#${book.title}`} key={book.id} target="_blank">
+							<img className='books__img' src={book.img} alt={`Imagen de portada de libro ${book.title}`}/>
+							<p className='books__title'>{book.title}</p>
 						</a>
 					))}
 				</ul>
