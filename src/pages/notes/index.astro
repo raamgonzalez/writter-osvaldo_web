@@ -1,8 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro';
 
 import { data } from '../../data/data';
 import ListOfNotes from '../../components/ListOfNotes.astro';
+import LayoutPages from '../../layouts/LayoutPages.astro';
 const { notes } = data;
 
 type Note = {
@@ -14,18 +14,17 @@ type Note = {
 }
 ---
 
-<Layout title="OGIglesias - Notas">
+<LayoutPages title="OGIglesias - Notas">
 	<section class="notes__page">
 		<h3>NOTAS</h3>
 		<ListOfNotes />
 	</section>
-</Layout>
+</LayoutPages>
 
 
 
 <style>
 	.notes__page {
-		margin: var(--margin-sections) 0 var(--margin-sections) 0;
 		height: fit-content;
 	}
 	.notes__page h3{

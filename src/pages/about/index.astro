@@ -1,9 +1,9 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import LayoutPages from '../../layouts/LayoutPages.astro';
 const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió tres novelas "La ciudad del sol", "Neurosis", "Tierra Sin MaL", obras de teatro como "Jauretche en sus laberintos", "Borges en sus laberintos", etc. Editor del periódico digital "Debate y Convergencia" y abreva sobre filosofia en Radio Zonica.'
 ---
 
-<Layout title="OGIglesias - Acerca">
+<LayoutPages title="OGIglesias - Acerca">
 	<section class="about__page">
 		<h3>ACERCA DE MÍ</h3>
 		<section class="about__profile">
@@ -11,17 +11,13 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 			<p>Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió tres novelas <span>"La ciudad del sol"</span> , <span>"Neurosis"</span> , <span>"Tierra Sin Mal"</span> , obras de teatro como <span>"Jauretche en sus laberintos"</span> , <span>"Borges en sus laberintos"</span> , etc. Editor del periódico digital <span>"Debate y Convergencia"</span> y abreva sobre filosofia en Radio Zonica.</p>
 		</section>
 	</section>
-</Layout>
+</LayoutPages>
 
 
 <style>
-	.about__page {
-		margin: var(--margin-xlarge) 0 var(--margin-xlarge) 0;
-		height: fit-content;
-	}
+
 	.about__page h3{
 		font-size: var(--font-size-large);
-		margin: var(--margin-small) 0 var(--margin-large) 0;
 	}
 	.about__page p{
 		margin: var(--margin-small) 0 var(--margin-xlarge) 0;
@@ -45,8 +41,14 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 
 	@media (1280px <= width <= 2000px) {
 
+		.about__profile img {
+		width: 40rem;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		margin: var(--margin-small) 0 var(--margin-large) 0;
+	}
+
 		.about__page {
-		margin: var(--margin-sections) 0 var(--margin-sections) 0;
 		height: fit-content;
 	}
 		.about__page p{

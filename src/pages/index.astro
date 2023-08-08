@@ -11,9 +11,10 @@ import About from '../components/About.astro';
 import Films from '../components/Films';
 import Home from '../components/Home.astro';
 import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
+import LayoutPages from '../layouts/LayoutPages.astro';
 ---
 
-<Layout title="OGIglesias - Escritor">
+<LayoutPages title="OGIglesias - Escritor">
 	<Home/>
 	<About/>
 	<section class="md:flex md:gap-20 ">
@@ -26,7 +27,7 @@ import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
 		<Films client:load/>
 	</section>
 	<Phrases/>
-</Layout>
+</LayoutPages>
 
 <style>
 	main {
