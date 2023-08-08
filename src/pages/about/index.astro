@@ -8,7 +8,7 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 		<h3>ACERCA DE MÍ</h3>
 		<section class="about__profile">
 			<img src="./profile/profile_01.jpg">
-			<p>Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió tres novelas <span>"La ciudad del sol"</span> , <span>"Neurosis"</span> , <span>"Tierra Sin Mal"</span> , obras de teatro como <span>"Jauretche en sus laberintos"</span> , <span>"Borges en sus laberintos"</span> , etc. Editor del periódico digital <span>"Debate y Convergencia"</span> y abreva sobre filosofia en Radio Zonica.</p>
+			<p>Indagador de la filosofía medieval, politólogo, autodidacta, exiliado en EEUU, durante el gobierno militar. Incursiona en la dramaturgia, en el periodismo y en la literatura. Nacido en Buenos Aires, padre de cuatro hijos y amante de la literatura rusa, del teatro norteamericano y de la musica afroamericana. Escribió cinco novelas <span>"La ciudad del sol"</span> , <span>"Neurosis"</span> , <span>"Tierra Sin Mal"</span> , <span>"Destellos bajo el agua"</span>, <span>"Razones seminales"</span> obras de teatro como <span>"Jauretche en sus laberintos"</span> , <span>"Borges en sus laberintos"</span> , etc. Editor del periódico digital <span>"Debate y Convergencia"</span> y abreva sobre filosofia en Radio Zonica.</p>
 		</section>
 	</section>
 </LayoutPages>
@@ -37,6 +37,7 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 		aspect-ratio: 1 / 1;
 		object-fit: cover;
 		margin: var(--margin-small) 0 var(--margin-large) 0;
+		box-shadow: 0 5px 20px 1px var(--color-icons);
 	}
 
 	@media (1280px <= width <= 2000px) {
@@ -44,6 +45,7 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 		.about__profile img {
 		width: 40rem;
 		aspect-ratio: 1 / 1;
+		object-position: center;
 		object-fit: cover;
 		margin: var(--margin-small) 0 var(--margin-large) 0;
 	}
@@ -63,7 +65,7 @@ const text = 'Indagador de la filosofía medieval, politólogo, autodidacta, exi
 	}
 	.about__profile{
 		display: flex;
-		gap: 2rem;
+		gap: 3rem;
 	}
 }
 
