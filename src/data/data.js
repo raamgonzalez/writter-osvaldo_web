@@ -204,9 +204,9 @@ export const data = {
   films: [
     {
       id: 1,
-      title: 'Presentación - Libro Razones seminales',
-      poster: '/films/poster/poster_presentacion-razones-seminales.jpg',
-      href: 'https://www.youtube.com/watch?v=6REACrUpPTs',
+      title: 'Entrevista - Sin exclusiones',
+      poster: '/films/poster/poster_entrevista-sin-exclusiones.jpg',
+      href: 'https://www.youtube.com/watch?v=9sq7X_WWL2A',
       movie: ''
     },
     {
@@ -225,9 +225,9 @@ export const data = {
     },
     {
       id: 4,
-      title: 'Entrevista - Sin exclusiones',
-      poster: '/films/poster/poster_entrevista-sin-exclusiones.jpg',
-      href: 'https://www.youtube.com/watch?v=9sq7X_WWL2A',
+      title: 'Presentación - Libro Razones seminales',
+      poster: '/films/poster/poster_presentacion-razones-seminales.jpg',
+      href: 'https://www.youtube.com/watch?v=6REACrUpPTs',
       movie: ''
     }
   ],
