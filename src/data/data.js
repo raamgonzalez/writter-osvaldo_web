@@ -261,6 +261,12 @@ export const data = {
       title: 'Instagram',
       href: 'https://www.instagram.com/osvaldogonzalez99/',
       state: true
+    },
+    {
+      id: 6,
+      title: 'Correo electrónico',
+      href: 'mailto:ongonzalez@buenosaires.gob.ar',
+      state: true
     }
   ]
 }
