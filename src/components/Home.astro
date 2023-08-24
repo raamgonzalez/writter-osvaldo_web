@@ -1,25 +1,37 @@
 <section class="home">
-	<h1>
-		OSVALDO GONZALEZ IGLESIAS
-	</h1>
-	<img class="home__img" src="./ui/lineroute.svg"/>
+	<section class="flex justify-start w-fit">
+		<img class="home__perfil" src="./profile/profile_02.jpeg"/>
+	</section>
 	<section class="home__works">
-		<p>Escritor</p>
-		<p>Politólogo</p>
-		<p>Periodista</p>
+		<h1>
+			OSVALDO GONZALEZ IGLESIAS
+		</h1>
+		<img class="home__img" src="./ui/lineroute.svg"/>
+		<section class="home__workslist">
+			<p>Escritor</p>
+			<p>Politólogo</p>
+			<p>Periodista</p>
+		</section>
 	</section>
 </section>
 
 
 <style>
+
 	.home{
 		margin: var(--margin-sections) 0 0 0;
 		display: flex;
-		justify-content: flex-start;
+		flex-direction: column;
+		gap: 3rem;
+	}
+	.home__works{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 		gap: 4rem;
 	}
 
-	.home h1{
+	.home__works h1{
 		font-size: 2.7rem;
 		font-family: var(--font-base);
 		max-width: 128px;
@@ -33,28 +45,52 @@
 		/* margin: 0 3rem 0 4rem; */
 	}
 
-	.home__works{
+	.home__workslist{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 9rem;
 		gap: 1.5rem;
 		font-family: var(--font-text);
 		font-size: var(--font-size-medium);
 		color: var(--color-primary);
 	}
 
+	.home__perfil{
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		align-self: flex-end;
+		box-shadow: 0 5px 20px 1px var(--color-icons);
+		border-radius: 5px;
+	}
+
 	@media (min-width: 768px) {
 
-	.home h1{
+	
+	.home{
+		margin: var(--margin-sections) 0 0 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 10rem;
+	}
+	.home__perfil{
+		height: 20rem;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		align-self: flex-end;
+		box-shadow: 0 5px 20px 1px var(--color-icons);
+		border-radius: 5px;
+	}
+	.home__works h1{
 		font-size: 4rem;
 	}
 	.home__img{
-		height: 15rem;
+		/* height: 15rem; */
 		margin: 0 5rem 0 7rem;
 	}
-	.home__works{
-		height: 15rem;
+	.home__workslist{
+		place-items: center;
+		/* height: 15rem; */
 		gap: 1.5rem;
 		font-family: var(--font-text);
 		font-size: var(--font-size-medium);
