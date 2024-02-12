@@ -1,5 +1,3 @@
-
-
 ---
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro'
@@ -11,8 +9,11 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
+
+//NO HACE NADA
+
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="cupcake" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
@@ -26,20 +27,20 @@ const { title } = Astro.props;
 		<Header id="top"/>
 		<slot />
 		<ButtonTop/>
+
 		<Footer />
 	</body>
 </html>
 <style is:global>
 	@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200;300;400&display=swap');
 :root {
-	--accent: 124, 58, 237;
+	/* --accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(5deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 
 	--color-primary: #FFEAD5;
 	--color-secondary: #E3E3E3;
 	--color-icons: #1E1E1E;
 	--color-background: #2D272D;
-	/*Opacity 20% */
 	--color-slider: #559E97;
 
 	--margin-sections: 160px;
@@ -55,7 +56,7 @@ const { title } = Astro.props;
 
 	--font-size-large: clamp(31px,4vw,50px);
 	--font-size-medium: clamp(20px,2vw,35px);
-	--font-size-small: clamp(16px,1.5vw,25px);
+	--font-size-small: clamp(16px,1.5vw,25px); */
 }
 
 	html {
@@ -88,13 +89,13 @@ const { title } = Astro.props;
 	}
 
 
-/* @media (min-width: 996px) {
+@media (min-width: 996px) {
 
 	body{
 		padding: 40px 30rem;
 	}
 
-} */
+}
 @media (768px <= width <= 996px) {
 
 	body{
@@ -111,9 +112,9 @@ const { title } = Astro.props;
 
 }
 
-@media (1280px <= width <= 1920px) {
+@media (600px <= width <= 1920px) {
 	body{
-		padding: 40px 20rem;
+		padding: 40px rem;
 	}
 
 }

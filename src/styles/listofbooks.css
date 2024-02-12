@@ -5,7 +5,6 @@
 	font-size: var(--font-size-large);
 }
 
-
 .books__swipe{
 	margin: var(--margin-small) 0 0 0;
 	display: flex;
@@ -21,7 +20,6 @@
 .books__swipe::-webkit-scrollbar-track{
 	background-color: transparent;
 }
-
 
 .books__a{
 	position: relative;
@@ -54,10 +52,6 @@
 	transition: all 0.5s ease-in-out;
 }
 
-/* img{
-	max-width: none!important;
-	height: none!important;
-} */
 
 .books__a{
 	position: relative;

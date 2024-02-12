@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/navbar.css'
+import ThemeController from './ThemeController';
 
 interface NavLinks {
 	id: number
@@ -48,23 +49,24 @@ export default function NavBar() {
 
 	return (
 		<>
+
 			<section>
 				<button onClick={() => setIsOpen(!isOpen)} className='header__abrir navbar__button'><img src='/ui/hamburger_open.svg' /></button>
-      	<nav className={isOpen ? 'navbar navbar--visible' : 'navbar'}>
+				<nav className={isOpen ? 'navbar navbar--visible' : 'navbar'}>
 					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button'><img className='navbar__img' src='/ui/hamburger_close.svg' /></button>
-						<ul className='nav__ul'>
-						{ navLinks.map((link) => {
+					<ul className='nav__ul'>
+						{navLinks.map((link) => {
 							return (
-									link.active && (
+								link.active && (
 									<li className="nav__li" key={link.id}>
-										<a className="nav__a" href={ link.href }>{ link.name }</a>
+										<a className="nav__a" href={link.href}>{link.name}</a>
 									</li>
-									)
 								)
-							})
+							)
+						})
 						}
-						</ul>
-      	</nav>
+					</ul>
+				</nav>
 			</section>
 		</>
 	)
