@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import { themeSelected } from '../context/Thames';
+import { useStore } from '@nanostores/react';
 
 export default function ThemeController() {
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  // const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+
+  const $themeSelected = useStore(themeSelected);
+
 
 
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("light");
+      themeSelected.set('light');
     } else {
-      setTheme("dark");
+      themeSelected.set('dark')
     }
+
+    console.log()
   };
 
   useEffect(() => {
-    localStorage.setItem('theme', theme)
+    localStorage.setItem('theme', themeSelected.value)
     const localTheme = localStorage.getItem('theme')
-    document.querySelector('html')?.setAttribute('data-theme', localTheme)
-}, [theme]);
+    document.querySelector('html')?.setAttribute('data-theme', localTheme || themeSelected.value)
+}, [$themeSelected]);
 
 
   return (

@@ -1,12 +1,12 @@
 ---
 import NavBar from './NavBar'
-import Logo from './Logo.astro';
+import Logo from './Logo';
 import ThemeController from './ThemeController';
 ---
 
 <header class="header">
 	<section>
-		<Logo/>
+		<Logo client:load/>
 	</section>
 	<section class="flex flex-col items-center justify-between">
 		<NavBar client:load/>
