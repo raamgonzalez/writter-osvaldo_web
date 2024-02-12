@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import '../styles/navbar.css'
-import ThemeController from './ThemeController';
+
+import { useStore } from '@nanostores/react';
+import { themeSelected } from '../context/Thames';
+import Hamburguer from './ui/Hamburguer';
 
 interface NavLinks {
 	id: number
@@ -47,23 +50,27 @@ export default function NavBar() {
 
 	const [isOpen, setIsOpen] = useState(false)
 
+	const $themeSelected = useStore(themeSelected);
+
+	const isDarkMode = $themeSelected === 'dark'
+
 	return (
 		<>
-
 			<section>
-				<button onClick={() => setIsOpen(!isOpen)} className='header__abrir navbar__button'><img src='/ui/hamburger_open.svg' /></button>
-				<nav className={isOpen ? 'navbar navbar--visible' : 'navbar'}>
-					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button'><img className='navbar__img' src='/ui/hamburger_close.svg' /></button>
+				<button onClick={() => setIsOpen(!isOpen)} className='header__abrir navbar__button'>
+					<Hamburguer isOpen={isOpen} />
+				</button>
+				<nav className={isOpen ? `navbar navbar--visible ${isDarkMode ? 'bg-dark' : 'bg-light'}` : `navbar`}>
+					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button '>
+						<Hamburguer isOpen={isOpen} />
+					</button>
 					<ul className='nav__ul'>
-						{navLinks.map((link) => {
-							return (
-								link.active && (
-									<li className="nav__li" key={link.id}>
-										<a className="nav__a" href={link.href}>{link.name}</a>
-									</li>
-								)
-							)
-						})
+						{navLinks.map((link) =>
+							link.active && (
+								<li className="nav__li" key={link.id}>
+									<a className="nav__a" href={link.href}>{link.name}</a>
+								</li>
+							))
 						}
 					</ul>
 				</nav>

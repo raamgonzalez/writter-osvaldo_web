@@ -24,98 +24,12 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header id="top"/>
+		<!-- <Header id="top"/>
 		<slot />
 		<ButtonTop/>
 
-		<Footer />
+		<Footer /> -->
 	</body>
 </html>
 <style is:global>
 	@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200;300;400&display=swap');
-:root {
-	/* --accent: 124, 58, 237;
-	--accent-gradient: linear-gradient(5deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-
-	--color-primary: #FFEAD5;
-	--color-secondary: #E3E3E3;
-	--color-icons: #1E1E1E;
-	--color-background: #2D272D;
-	--color-slider: #559E97;
-
-	--margin-sections: 160px;
-	--margin-xlarge: 80px;
-	--margin-large: 40px;
-	--margin-small: 20px;
-
-
-	--padding-horizontal: 20px;
-
-	--font-base: 'Oswald', sans-serif;
-	--font-text: 'Belleza', sans-serif; 
-
-	--font-size-large: clamp(31px,4vw,50px);
-	--font-size-medium: clamp(20px,2vw,35px);
-	--font-size-small: clamp(16px,1.5vw,25px); */
-}
-
-	html {
-		scroll-behavior: smooth;
-		font-weight: normal;
-		background-color: var(--color-background);
-		color: var(--color-primary);
-	}
-
-	::-webkit-scrollbar{
-		width: 10px;
-	}
-	::-webkit-scrollbar-track{
-		background-color: var(--color-icons);
-	}
-	::-webkit-scrollbar-thumb{
-		position: relative;
-		background-color: var(--color-primary);
-		border: 1px dotted var(--color-primary);
-	}
-	::-webkit-scrollbar-thumb:hover {
-		background-color: var(--color-secondary);
-	}
-
-	body{
-		font-family: var(--font-base);
-		width: 100%;
-		height: 100vh;
-		padding: var(--margin-small) var(--margin-small);
-	}
-
-
-@media (min-width: 996px) {
-
-	body{
-		padding: 40px 30rem;
-	}
-
-}
-@media (768px <= width <= 996px) {
-
-	body{
-		padding: 40px 10rem;
-	}
-
-}
-
-@media (996px <= width <= 1280px) {
-
-	body{
-		padding: 40px 15rem;
-	}
-
-}
-
-@media (600px <= width <= 1920px) {
-	body{
-		padding: 40px rem;
-	}
-
-}
-</style>

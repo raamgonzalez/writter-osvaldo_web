@@ -2,6 +2,10 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		colors: {
+			"dark": "#0f1114",
+			"light": "#ebedf0",
+		},
 		extend: {}
 	},
 	plugins: [require("daisyui")],
@@ -22,7 +26,7 @@ module.exports = {
 					"neutral": "#21252c",
 					"base-100": "#0f1114",
 				},
-			},
+			}
 		],
 	},
 
