@@ -49,9 +49,7 @@ export const navLinks: NavLinks[] = [
 export default function NavBar() {
 
 	const [isOpen, setIsOpen] = useState(false)
-
 	const $themeSelected = useStore(themeSelected);
-
 	const isDarkMode = $themeSelected === 'dark'
 
 	return (
@@ -64,7 +62,7 @@ export default function NavBar() {
 					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button '>
 						<Hamburguer isOpen={isOpen} />
 					</button>
-					<ul className='nav__ul'>
+					<ul className='flex flex-col justify-center w-full'>
 						{navLinks.map((link) =>
 							link.active && (
 								<li className="nav__li" key={link.id}>
