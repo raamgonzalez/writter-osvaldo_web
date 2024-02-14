@@ -4,11 +4,7 @@ import { useStore } from '@nanostores/react';
 
 export default function ThemeController() {
 
-  // const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-
   const $themeSelected = useStore(themeSelected);
-
-
 
   const handleToggle = (e) => {
     if (e.target.checked) {
@@ -16,8 +12,6 @@ export default function ThemeController() {
     } else {
       themeSelected.set('dark')
     }
-
-    console.log()
   };
 
   useEffect(() => {
@@ -25,7 +19,6 @@ export default function ThemeController() {
     const localTheme = localStorage.getItem('theme')
     document.querySelector('html')?.setAttribute('data-theme', localTheme || themeSelected.value)
 }, [$themeSelected]);
-
 
   return (
     <label className="swap swap-rotate">

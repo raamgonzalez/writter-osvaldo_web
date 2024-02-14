@@ -6,6 +6,22 @@ module.exports = {
 			"dark": "#0f1114",
 			"light": "#ebedf0",
 		},
+		fontSize: {
+			xlarge: '2rem',
+			large: '1.7rem',
+			medium: '1.2rem',
+			small: '1rem'
+		},
+		margin: {
+			msection: '10rem',
+			mxlarge: '5rem',
+			mlarge: '2.5rem',
+			msmall: '1.25rem'
+		},
+		fontFamily: {
+			oswald: ['Oswald', 'sans-serif'],
+			belleza: ['Belleza', 'sans-serif']
+		},
 		extend: {}
 	},
 	plugins: [require("daisyui")],
@@ -26,7 +42,9 @@ module.exports = {
 					"neutral": "#21252c",
 					"base-100": "#0f1114",
 				},
-			}
+			},
+			// 'light',
+			// "dark"
 		],
 	},
 

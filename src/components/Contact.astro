@@ -1,5 +1,5 @@
 ---
-import ButtonArrow from './ui/ButtonArrow.astro'
+import ButtonArrow from './ui/ButtonArrow'
 import { data } from '../data/data';
 
 const socials = data.contact;
@@ -18,15 +18,16 @@ type Social = {
 		socials.map((social:Social)=>(
 			social.state &&
 			<section class="contact__container">
-				<a class="contact__a" href={social.href} target="_blank">
+				<a class="contact__a text-small" href={social.href} target="_blank">
 					{social.title.toUpperCase()}
 				</a>
-				<ButtonArrow classSvg={'button__svg button__svg--nobackground'}  classPath={'button__path--nobackground'}/>
+
 			</section>
 		))
 	}
 </section>
 
+<!-- <ButtonArrow redirect={true} href={null}/> -->
 
 <style>
 	.contact{
@@ -45,8 +46,6 @@ type Social = {
 		width: 100%;
 		height: 35px;
 		border-radius: 5px;
-		border: 1px solid var(--color-primary);
-		box-shadow: 0 3px 1px 1px var(--color-icons);
 	}
 	.contact__container:hover{
 		background-color: var(--color-primary);
@@ -58,7 +57,6 @@ type Social = {
 	.contact__a{
 		width: 100%;
 		height: fit-content;
-		font-size: var(--font-size-small);
 		font-family: var(--font-text);
 	}
 

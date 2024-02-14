@@ -2,14 +2,14 @@
 import LineH from './ui/LineH';
 import Contact from './Contact.astro'
 import { data } from '../data/data';
-import Logo from './Logo';
+import Logo from './ui/Logo';
 
 const { films } = data;
 ---
 
 
 <footer class="contact">
-	<h2>CONTACTO</h2>
+	<h2 class="text-large">CONTACTO</h2>
 	<LineH/>
 	<Contact/>
 	<section class="contact__policy">
@@ -43,7 +43,6 @@ const { films } = data;
 
 
 	.contact h2{
-		font-size: var(--font-size-large);
 		margin: var(--margin-small) 0 0 0;
 	}
 

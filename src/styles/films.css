@@ -1,9 +1,9 @@
 .films{
 	margin: var(--margin-sections) 0 0 0;
 }
-.films h2{
+/* .films h2{
 	font-size: var(--font-size-large);
-}
+} */
 .films__img{
 	object-fit: cover;
 	min-width: 335px;

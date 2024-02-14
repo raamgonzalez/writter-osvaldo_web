@@ -17,8 +17,8 @@ const randomPhrase:Phrase = phrases[Math.floor(Math.random() * phrases.length)];
 	{
 		<section class="phrase__quote">
 			<BackQuotes/>
-				<p>{randomPhrase.phrase}</p>
-				<span>{randomPhrase.author}</span>
+				<p class="text-large">{randomPhrase.phrase}</p>
+				<span class="text-medium">{randomPhrase.author}</span>
 		</section>
 	}
 </section>
@@ -36,13 +36,11 @@ const randomPhrase:Phrase = phrases[Math.floor(Math.random() * phrases.length)];
 	}
 
 	.phrase__quote p{
-		font-size: var(--font-size-large);
 		font-weight: 300;
 		line-height: 2.5rem;
 	}
 	.phrase__quote span{
 		font-size: large;
-		font-size: var(--font-size-small);
 	}
 
 

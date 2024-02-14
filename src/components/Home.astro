@@ -1,69 +1,20 @@
-<section class="home">
+---
+	import LineRoute from './ui/LineRoute';
+---
+
+<section class="home mt-msection flex flex-col gap-12">
 	<section class="flex justify-start w-fit">
 		<img class="self-end rounded-xl object-cover aspect-square" src="./profile/profile_02.jpeg"/>
 	</section>
 	<section class="flex justify-end items-center gap-[64px]">
-		<h1 class="max-w-[128px] p-0 m-0 leading-10 font-normal text-4xl">
+		<h1 class="max-w-[128px] p-0 m-0 leading-10 font-normal text-xlarge">
 			OSVALDO GONZALEZ IGLESIAS
 		</h1>
-		<img class="home__img" src="./ui/lineroute.svg"/>
-		<section class="items-center text-3xl leading-10">
+		<LineRoute/>
+		<section class="items-center text-large leading-10 font">
 			<p>Escritor</p>
 			<p>Politólogo</p>
 			<p>Periodista</p>
 		</section>
 	</section>
 </section>
-
-
-<style>
-
-	.home{
-		margin: var(--margin-sections) 0 0 0;
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-	}
-
-	.home__works h1{
-		font-family: var(--font-base);
-	}
-
-	.home__workslist{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		gap: 1.5rem;
-		font-family: var(--font-text);
-		font-size: var(--font-size-medium);
-		color: var(--color-primary);
-	}
-
-	@media (min-width: 768px) {
-
-	.home{
-		margin: var(--margin-sections) 0 0 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		gap: 10rem;
-	}
-	.home__perfil{
-		height: 20rem;
-		aspect-ratio: 1/1;
-		object-fit: cover;
-		align-self: flex-end;
-		box-shadow: 0 5px 20px 1px var(--color-icons);
-		border-radius: 5px;
-	}
-	.home__img{
-		/* height: 15rem; */
-		margin: 0 5rem 0 7rem;
-	}
-	.home__workslist{
-		font-family: var(--font-text);
-		font-size: var(--font-size-medium);
-		color: var(--color-primary);
-	}
-}
-</style>

@@ -1,7 +1,7 @@
 
 
 import { useStore } from '@nanostores/react';
-import { themeSelected } from '../context/Thames';
+import { themeSelected } from '../../context/Thames';
 
 export default function Logo({ size }: any) {
 	const widthLogo = size === 'small' ? 42 : 172
