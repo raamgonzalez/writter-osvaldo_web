@@ -1,5 +1,5 @@
 import { useStore } from "@nanostores/react";
-import { themeSelected } from "../../context/Thames";
+import { themeSelected } from "../../context/Themes";
 
 export default function ButtonArrow({redirect, href}) {
 

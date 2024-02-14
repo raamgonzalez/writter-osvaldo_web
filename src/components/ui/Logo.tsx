@@ -1,16 +1,22 @@
 
 
 import { useStore } from '@nanostores/react';
-import { themeSelected } from '../../context/Thames';
+import { themeSelected } from '../../context/Themes';
+import { useEffect } from 'react';
 
 export default function Logo({ size }: any) {
 	const widthLogo = size === 'small' ? 42 : 172
 	const $themeSelected = useStore(themeSelected);
 
+
 	const colorFill = $themeSelected === 'dark' ? '#b3bbc6' : '#21252c'
 
+	useEffect(() => {
+	}, [$themeSelected])
+
+
 	return (
-		<a href="/">
+		<a href="/" >
 			<svg width={widthLogo} height="auto" viewBox="0 0 172 121" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path fill={colorFill} d="M117.569 60.5C117.569 71.5766 115.101 81.6901 110.164 90.8403C105.228 99.9906 98.305 107.335 89.3955 112.873C80.4861 118.291 70.1318 121 58.3328 121C40.6343 121 26.4876 115.1 15.8925 103.301C5.29751 91.3821 0 77.1149 0 60.5C0 43.6443 5.41791 29.3771 16.2537 17.6985C27.21 5.8995 41.3567 0 58.694 0C76.2721 0 90.4791 5.8995 101.315 17.6985C112.151 29.4975 117.569 43.7647 117.569 60.5ZM103.301 60.6806C103.301 46.594 99.2682 34.9756 91.2015 25.8254C83.1348 16.5547 72.299 11.9194 58.694 11.9194C44.7279 11.9194 33.8318 16.6149 26.006 26.006C18.1801 35.397 14.2672 46.8348 14.2672 60.3194C14.2672 73.5632 18.1801 85.001 26.006 94.6328C33.8318 104.265 44.8483 109.081 59.0552 109.081C72.901 109.081 83.7368 104.445 91.5627 95.1746C99.3885 85.7836 103.301 74.2856 103.301 60.6806Z" />
 				<path fill={colorFill} d="M172 119H153V107.382V105.838V12.6185V1H172V12.6185V107.382V119Z" />

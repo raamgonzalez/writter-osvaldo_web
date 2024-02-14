@@ -4,7 +4,7 @@ import Logo from './ui/Logo';
 import ThemeController from './ThemeController';
 ---
 
-<header class="header">
+<header class="flex justify-between">
 	<section>
 		<Logo client:load/>
 	</section>
@@ -13,19 +13,3 @@ import ThemeController from './ThemeController';
 		<ThemeController client:load/>
 	</section>
 </header>
-
-
-<style>
-	.header{
-		display: flex;
-		justify-content: space-between;	
-	}
-
-	@media (1280px <= width <= 2000px) {
-		.header{
-		align-items: center;
-		justify-content: space-between;
-	}
-
-}
-</style>

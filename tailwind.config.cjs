@@ -13,7 +13,7 @@ module.exports = {
 			small: '1rem'
 		},
 		margin: {
-			msection: '10rem',
+			msection: '6rem',
 			mxlarge: '5rem',
 			mlarge: '2.5rem',
 			msmall: '1.25rem'

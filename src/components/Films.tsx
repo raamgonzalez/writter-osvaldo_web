@@ -23,18 +23,18 @@ export default function Films() {
 	const { scrollXProgress } = useScroll({ container: ref });
 
 	return (
-		<section className="films">
+		<section className="mt-msection">
 			<h2 className='text-large mb-5'>FILMOTECA</h2>
 			<LineH />
 			<div className='progress'>
 				<motion.div className="progress-bar" style={{ scaleX: scrollXProgress }} />
 			</div>
-			<ul className="films__container" ref={ref}>
+			<ul className="w-full flex overflow-x-scroll gap-4 mt-msmall" ref={ref}>
 				{
 					films.map((film: Film) => (
-						<a key={film.id} href={film.href} target="_blank">
-							<img src={film.poster} className="films__img" />
-							<p className='films__title'>{film.title}</p>
+						<a className='relative' key={film.id} href={film.href} target="_blank">
+							<img src={film.poster} className="hover:grayscale-[80%] transition-all shadow-md object-cover min-w-[300px] aspect-square" />
+							<p className='text-center'>{film.title}</p>
 						</a>
 					))
 				}

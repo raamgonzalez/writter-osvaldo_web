@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/navbar.css'
 
 import { useStore } from '@nanostores/react';
-import { themeSelected } from '../context/Thames';
+import { themeSelected } from '../context/Themes';
 import Hamburguer from './ui/Hamburguer';
 
 interface NavLinks {

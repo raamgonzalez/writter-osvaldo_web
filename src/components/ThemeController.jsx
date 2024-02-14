@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { themeSelected } from '../context/Thames';
+import { themeSelected } from '../context/Themes';
 import { useStore } from '@nanostores/react';
 
 export default function ThemeController() {
