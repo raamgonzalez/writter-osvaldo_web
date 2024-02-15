@@ -33,7 +33,7 @@ export default function Films() {
 				{
 					films.map((film: Film) => (
 						<a className='relative' key={film.id} href={film.href} target="_blank">
-							<img src={film.poster} className="hover:grayscale-[80%] transition-all shadow-md object-cover min-w-[300px] aspect-square" />
+							<img src={film.poster} className="hover:grayscale-[80%] transition-all shadow-md shadow-base-300 object-cover min-w-[300px] aspect-square rounded-md" />
 							<p className='text-center'>{film.title}</p>
 						</a>
 					))

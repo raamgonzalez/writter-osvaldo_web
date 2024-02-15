@@ -1,78 +1,56 @@
 
-	<div class="circle__container">
-		<div class="circle__button">
+	<div class="fixed bottom-8 right-4 z-10">
+		<div class="filter opacity-90 rounded-full bg-base-300">
 			<a href="#top">
-				<img src='/ui/arrow_top.svg' />	
+				<img class="rotate-180 w-12" src='/ui/arrow_top.svg' />	
 			</a>
 		</div>
 	</div>
 
 
 
+<!-- <style>
 
-<style>
+	@media (768px <= width <= 996px) {
+		.circle__container{
+		position: fixed;
+		bottom: 2rem;
+		right: 10rem;
+		z-index: 1;
+		}
 
-.circle__container{
-	position: fixed;
-	bottom: 2rem;
-	right: 1rem;
-	z-index: 100;
-}
+		.circle__button img {
+		transform: rotate(180deg);
+		width: 4rem;
+		}
 
-.circle__button{
-	background-color: var(--color-slider);
-	filter: opacity(0.9);
-	width: fit-content;
-	height: fit-content;
-	border-radius: 50%;
-}
-
-.circle__button img {
-	transform: rotate(180deg);
-	width: 3rem;
-}
-
-@media (768px <= width <= 996px) {
-	.circle__container{
-	position: fixed;
-	bottom: 2rem;
-	right: 10rem;
-	z-index: 1;
 	}
 
-	.circle__button img {
-	transform: rotate(180deg);
-	width: 4rem;
+	@media (996px <= width <= 1480px) {
+		.circle__container{
+		position: fixed;
+		bottom: 2rem;
+		right: 10rem;
+		z-index: 1;
+		}
+
+		.circle__button img {
+		transform: rotate(180deg);
+		width: 5rem;
+		}
+
 	}
 
-}
+	@media (1480px <= width <= 1920px) {
+		.circle__container{
+		right: 20rem;
+		}
 
-@media (996px <= width <= 1480px) {
-	.circle__container{
-	position: fixed;
-	bottom: 2rem;
-	right: 10rem;
-	z-index: 1;
+		.circle__button img {
+		transform: rotate(180deg);
+		width: 5rem;
+		}
+
 	}
 
-	.circle__button img {
-	transform: rotate(180deg);
-	width: 5rem;
-	}
-
-}
-
-@media (1480px <= width <= 1920px) {
-	.circle__container{
-	right: 20rem;
-	}
-
-	.circle__button img {
-	transform: rotate(180deg);
-	width: 5rem;
-	}
-
-}
-
-
-</style>
+</style> -->

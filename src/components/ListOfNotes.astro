@@ -1,6 +1,8 @@
 ---
 
 	import { data } from '../data/data';
+	import Container from './ui/Container';
+
 	const { notes } = data;
 
 	type Note = {
@@ -15,11 +17,14 @@
 
 <section class="mt-msmall flex flex-col gap-4">
 	{notes.map((note:Note) => (
+
 		note.important &&
+		<Container>
 			<a href={note.href} class="flex flex-col gap-1 font-belleza">
 				<p class="text-medium font-bold">{note.title}</p>
 				<p class="text-small">{note.content}</p>
 			</a>
+		</Container>
 	))}
 </section>
 

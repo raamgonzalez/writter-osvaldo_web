@@ -1,70 +1,23 @@
 ---
 import LineH from './ui/LineH';
 import Contact from './Contact.astro'
-import { data } from '../data/data';
 import Logo from './ui/Logo';
 
-const { films } = data;
 ---
 
 
-<footer class="contact">
-	<h2 class="text-large">CONTACTO</h2>
+<footer>
+	<h2 class="mt-msmall text-large">CONTACTO</h2>
 	<LineH/>
 	<Contact/>
-	<section class="contact__policy">
+	<section class="flex justify-between items-center text-xs font-oswald font-extralight">
 		<p>Todos los derechos reservados</p>
 		<Logo client:load size='small'/>
 	</section>
 </footer>
-<section class="designer">
-	<p>Design and programming by</p>
-	<a class="designer__img" href="https://www.ramsesgonzalez.dev/" target="_blank">
+<section class="flex justify-center gap-2 py-8">
+	<p class="text-xs font-belleza font-extralight">Design and programming by</p>
+	<a class="w-12" href="https://www.ramsesgonzalez.dev/" target="_blank">
 		<img src="./portfolio_brand.webp"/>
 	</a>
 </section>
-
-
-
-<style>
-
-	.designer{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		padding: var(--margin-small) 0 var(--margin-small) 0;
-		gap: 0.5rem;
-	}
-
-	.designer__img{
-		width: 3rem;
-	}
-
-
-	.contact h2{
-		margin: var(--margin-small) 0 0 0;
-	}
-
-	.contact__policy{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		place-items: center;
-	}
-
-	@media (1280px <= width <= 2000px) {
-
-		.contact__policy{
-		font-size: var(--font-size-small);
-	}
-.designer{
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		padding: 10px 0 40px 0;
-	}
-
-}
-
-</style>

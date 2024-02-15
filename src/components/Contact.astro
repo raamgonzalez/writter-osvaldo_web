@@ -1,6 +1,7 @@
 ---
 import ButtonArrow from './ui/ButtonArrow'
 import { data } from '../data/data';
+import Container from './ui/Container';
 
 const socials = data.contact;
 
@@ -13,15 +14,17 @@ type Social = {
 
 ---
 
-<section class="mt-mlarge mb-mlarge flex flex-col gap-4">
+<section class="mt-msmall mb-mlarge flex flex-col gap-4">
 	{
 		socials.map((social:Social)=>(
 			social.state &&
-			<section class="flex justify-between items-center w-full h-6 ">
-				<a class="h-fit font-belleza text-small" href={social.href} target="_blank">
-					{social.title.toUpperCase()}
-				</a>
-			</section>
+			<Container>
+				<section class="flex justify-between items-center w-full h-6 ">
+					<a class="h-fit font-belleza text-small" href={social.href} target="_blank">
+						{social.title.toUpperCase()}
+					</a>
+				</section>
+			</Container>
 		))
 	}
 </section>

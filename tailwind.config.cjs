@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import animations from '@midudev/tailwind-animations'
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -24,7 +25,7 @@ module.exports = {
 		},
 		extend: {}
 	},
-	plugins: [require("daisyui")],
+	plugins: [require("daisyui"), animations],
 	daisyui: {
 		themes: [
 			{
@@ -32,7 +33,7 @@ module.exports = {
 					"primary": "#39414c",
 					"secondary": "#a2a3b9",
 					"accent": "#615e7d",
-					"neutral": "#21252c",
+					"neutral": "#00534b3d",
 					"base-100": "#ebedf0",
 				},
 				dark: {
