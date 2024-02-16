@@ -1,5 +1,4 @@
 
-import LineH from './ui/LineH';
 import { data } from '../data/data';
 import '../styles/films.css'
 import { useRef } from 'react';
@@ -24,12 +23,11 @@ export default function Films() {
 
 	return (
 		<section className="mt-msection">
-			<h2 className='text-large mb-5'>FILMOTECA</h2>
-			<LineH />
+			<h2 className='text-large mb-msmall'>FILMOTECA</h2>
 			<div className='progress'>
 				<motion.div className="progress-bar" style={{ scaleX: scrollXProgress }} />
 			</div>
-			<ul className="w-full flex overflow-x-scroll gap-4 mt-msmall" ref={ref}>
+			<ul className="w-full flex overflow-x-scroll gap-4 mt-[0.75rem]" ref={ref}>
 				{
 					films.map((film: Film) => (
 						<a className='relative' key={film.id} href={film.href} target="_blank">

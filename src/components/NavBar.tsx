@@ -55,18 +55,18 @@ export default function NavBar() {
 	return (
 		<>
 			<section>
-				<button onClick={() => setIsOpen(!isOpen)} className='header__abrir navbar__button'>
+				<button onClick={() => setIsOpen(!isOpen)} className='no-underline bg-transparent'>
 					<Hamburguer isOpen={isOpen} />
 				</button>
-				<nav className={isOpen ? `navbar navbar--visible ${isDarkMode ? 'bg-dark' : 'bg-light'}` : `navbar`}>
-					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button '>
+				<nav className={isOpen ? `opacity-100 fixed transition-all ease-in-out z-10 top-0 right-0 text-right w-full h-full p-5 visible ${isDarkMode ? 'bg-dark' : 'bg-light'}` : `opacity-100 hidden fixed transition-all ease-in-out z-10 top-0 right-0 text-right w-full h-full p-5`}>
+					<button onClick={() => setIsOpen(!isOpen)} className='block absolute top-[-0.5%] right-0 p-0 mt-[24.5px] mr-[1.20rem] no-underline bg-transparent '>
 						<Hamburguer isOpen={isOpen} />
 					</button>
-					<ul className='flex flex-col justify-center w-full'>
+					<ul className='flex flex-col justify-center w-full h-full'>
 						{navLinks.map((link) =>
 							link.active && (
-								<li className="nav__li" key={link.id}>
-									<a className="nav__a" href={link.href}>{link.name}</a>
+								<li className="text-center py-1 px-2 " key={link.id}>
+									<a className="text-xxlarge" href={link.href}>{link.name}</a>
 								</li>
 							))
 						}

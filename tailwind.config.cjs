@@ -8,6 +8,7 @@ module.exports = {
 			"light": "#ebedf0",
 		},
 		fontSize: {
+			xxlarge: '3rem',
 			xlarge: '2rem',
 			large: '1.7rem',
 			medium: '1.2rem',
@@ -18,6 +19,12 @@ module.exports = {
 			mxlarge: '5rem',
 			mlarge: '2.5rem',
 			msmall: '1.25rem'
+		},
+		padding: {
+			xxlarge: '1.25rem',
+			xlarge: '0.75rem',
+			large: '0.5rem',
+			small: '0.25rem'
 		},
 		fontFamily: {
 			oswald: ['Oswald', 'sans-serif'],
