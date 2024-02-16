@@ -1,5 +1,5 @@
 
-/* @media (1280px <= width <= 2000px) {
+@media (1280px <= width <= 2000px) {
 
 	.navbar__button{
 		display: none;
@@ -27,4 +27,4 @@
 		background-color: transparent;
 		padding: 0;
 	}
-} */
+}

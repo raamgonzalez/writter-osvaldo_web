@@ -8,7 +8,7 @@ module.exports = {
 			"light": "#ebedf0",
 		},
 		fontSize: {
-			xxlarge: '3rem',
+			xxlarge: '2.5rem',
 			xlarge: '2rem',
 			large: '1.7rem',
 			medium: '1.2rem',
@@ -40,7 +40,7 @@ module.exports = {
 					"primary": "#39414c",
 					"secondary": "#a2a3b9",
 					"accent": "#615e7d",
-					"neutral": "#00534b3d",
+					"neutral": "#21252c",
 					"base-100": "#ebedf0",
 				},
 				dark: {
@@ -51,8 +51,6 @@ module.exports = {
 					"base-100": "#0f1114",
 				},
 			},
-			// 'light',
-			// "dark"
 		],
 	},
 
