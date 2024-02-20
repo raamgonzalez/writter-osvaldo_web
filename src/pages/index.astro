@@ -1,30 +1,21 @@
 ---
-// import Articles from '../components/Articles.astro';
-// import ComingSoon from '../components/ComingSoon.astro';
-import Notes from '../components/Notes.astro';
-import ListOfBooks from '../components/ListOfBooks';
-import Phrases from '../components/Phrases.astro';
-import Layout from '../layouts/Layout.astro';
-import BookNewPromotion from '../components/BookNewPromotion.astro';
-import About from '../components/About.astro';
-// import Contact from '../components/Contact.astro';
-import Films from '../components/Films';
-import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
+
+import Logo from '../components/ui/Logo';
+import BubbleCard from '../components/ui/BubbleCard.astro';
 import LayoutPages from '../layouts/LayoutPages.astro';
+import NavBar from '../components/NavBar';
 import Hero from '../components/Hero.astro';
+
 ---
 
 <LayoutPages title="OGIglesias - Escritor">
-	<Hero/>
-	<About/>
-	<section class="md:flex md:gap-20">
-		<BookNewPromotion/>
-		<PhraseOsvaldo/>
-	</section>
-	<ListOfBooks client:load/>
-	<section class="grid grid-cols-1">
-		<Notes/>
-		<Films client:load/>
-	</section>
-	<Phrases/>
+	<header class="w-full flex gap-2">
+		<BubbleCard border radius={['3xl']}>
+			<Logo/>
+		</BubbleCard>
+		<NavBar/>
+	</header>
+	<main class="my-xs">
+		<Hero/>
+	</main>
 </LayoutPages>

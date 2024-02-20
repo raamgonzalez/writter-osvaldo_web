@@ -9,7 +9,7 @@ export default function Logo({ size }: any) {
 	const $themeSelected = useStore(themeSelected);
 
 
-	const colorFill = $themeSelected === 'dark' ? '#b3bbc6' : '#21252c'
+	const colorFill = $themeSelected === 'dark' ? '#DCAB18' : '#DCAB18'
 
 	useEffect(() => {
 	}, [$themeSelected])

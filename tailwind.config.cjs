@@ -8,27 +8,34 @@ module.exports = {
 			"light": "#ebedf0",
 		},
 		fontSize: {
-			xxlarge: '2.5rem',
-			xlarge: '2rem',
-			large: '1.7rem',
-			medium: '1.2rem',
-			small: '1rem'
+			h1: '2.986rem',
+			xxxl: '2.488rem',
+			xxl: '2.07rem',
+			xl: '1.728rem',
+			l: '1.44rem',
+			m: '1.2rem',
+			n: '1rem',
+			s: '0.833rem'
 		},
 		margin: {
-			msection: '6rem',
-			mxlarge: '5rem',
-			mlarge: '2.5rem',
-			msmall: '1.25rem'
+			xxl: '6rem',
+			xxl: '5rem',
+			xl: '4rem',
+			l: '3rem',
+			m: '2rem',
+			s: '1rem',
+			xs: '0.5rem'
 		},
 		padding: {
-			xxlarge: '1.25rem',
-			xlarge: '0.75rem',
-			large: '0.5rem',
-			small: '0.25rem'
+			xxl: '15rem',
+			xl: '1.25rem',
+			l: '1rem',
+			m: '0.75rem',
+			n: '0.5rem',
+			s: '0.25rem'
 		},
 		fontFamily: {
-			oswald: ['Oswald', 'sans-serif'],
-			belleza: ['Belleza', 'sans-serif']
+			montserrat: ['Montserrat', 'sans-serif'],
 		},
 		extend: {}
 	},
@@ -37,18 +44,18 @@ module.exports = {
 		themes: [
 			{
 				light: {
-					"primary": "#39414c",
-					"secondary": "#a2a3b9",
-					"accent": "#615e7d",
-					"neutral": "#21252c",
-					"base-100": "#ebedf0",
+					"primary": "#e7b623",
+					"secondary": "#bfbec1",
+					"accent": "#6c7354",
+					"neutral": "#242429",
+					"base-100": "#dcdce0",
 				},
 				dark: {
-					"primary": "#b3bbc6",
-					"secondary": "#46475d",
-					"accent": "#8582a1",
-					"neutral": "#21252c",
-					"base-100": "#0f1114",
+					"primary": "#dcab18",
+					"secondary": "#3f3e41",
+					"accent": "#a4ab8c",
+					"neutral": "#242429",
+					"base-100": "#1f1f23",
 				},
 			},
 		],

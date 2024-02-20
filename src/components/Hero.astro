@@ -1,20 +1,32 @@
 ---
-	import LineRoute from './ui/LineRoute';
+import BubbleCard from "./ui/BubbleCard.astro";
+
+
 ---
 
-	<section class="mt-msection flex flex-col gap-12">
-		<section class="flex justify-start w-fit">
-			<img class="self-end rounded-md object-cover aspect-square shadow-md shadow-base-300" src="./profile/profile_02.jpeg"/>
-		</section>
-		<section class="flex items-center justify-between">
-			<h1 class="max-w-[128px] p-0 m-0 leading-10 font-normal text-xlarge">
+
+<section class="flex flex-col">
+		<img class="self-end rounded-xl object-cover aspect-auto w-full max-h-[300px]" src="./profile/profile_02.jpeg"/>
+		<main class="flex mt-xs gap-2">
+			<BubbleCard background classStyle=={'flex-1'}>
 				OSVALDO GONZALEZ IGLESIAS
-			</h1>
-			<LineRoute/>
-			<section class="items-center text-large leading-10 font">
-				<p>Escritor</p>
-				<p>Politólogo</p>
-				<p>Periodista</p>
+			</BubbleCard>
+			<section class="w-full flex flex-wrap flex-0">
+				<BubbleCard border>
+					<p>DG</p>
+				</BubbleCard>
+				<BubbleCard border>
+					<p>RD</p>
+				</BubbleCard>
+				<BubbleCard border>
+					<p>IG</p>
+				</BubbleCard>
+				<BubbleCard border>
+					<p>IN</p>
+				</BubbleCard>
+				<BubbleCard border>
+					<p>EM</p>
+				</BubbleCard>
 			</section>
-		</section>
-	</section>
+		</main>
+</section>

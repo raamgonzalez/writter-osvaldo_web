@@ -1,0 +1,18 @@
+---
+
+import { BORDERTYPICAL } from '../../constants'
+
+const { border, radius, classStyle, background } = Astro.props;
+
+
+const borderStyle = border && 'border border-[#818181]' 
+
+const radiusValues = radius && `rounded-ss-${radius[0] || BORDERTYPICAL} rounded-se-${radius[1] || BORDERTYPICAL} rounded-ee-${radius[2] || BORDERTYPICAL} rounded-es-${radius[3] || BORDERTYPICAL}`
+
+const backgroundStyle = background && 'bg-secondary'
+
+---
+
+<div class={`w-fit p-l  ${borderStyle} ${radiusValues} ${classStyle} ${backgroundStyle}`}>
+	<slot />
+</div>
