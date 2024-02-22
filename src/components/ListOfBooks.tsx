@@ -24,17 +24,14 @@ export default function ListOfBooks() {
 	return (
 		<>
 
-			<section className="mt-msection">
-				<h2 className="text-large mb-msmall">LIBRERÍA</h2>
-				<div className='progress'>
-					<motion.div className="progress-bar" style={{ scaleX: scrollXProgress }} />
-				</div>
-				<ul className="mt-[0.75rem] flex flex-nowrap overflow-x-scroll gap-4 scroll-smooth" ref={ref}>
+			<section className="w-full">
+				<ul className="flex flex-nowrap overflow-x-scroll gap-2 scroll-smooth" ref={ref}>
 					{books.map((book: Book) => (
-						<a className='min-w-[221px] h-auto w-auto relative w-full h-full' href={`/books/#${book.title}`} key={book.id} target="_blank">
-							<img className='min-h-[358px] object-cover shadow-md shadow-base-300 rounded-md' src={book.img} alt={`Imagen de portada de libro ${book.title}`} />
-							<p className='hover:visible hover:rounded-sm hover:py-4 hover:px-8 absolute left-[5%] bottom-[5%] hidden py-4 px-8 text-small'>{book.title}</p>
+						<a className='min-w-full h-auto relative rounded-xl' href={`/books/#${book.title}`} key={book.id} target="_blank">
+							<img className='min-h-full min-w-full object-cover rounded-xl' src={book.img} alt={`Imagen de portada de libro ${book.title}`} />
+							<p className='bg-text text-secondary flex items-center h-2 visible rounded-r-xl absolute text-small p-xl bottom-36 gap-1'><span className='font-extrabold'>Comprar</span> {book.title}</p>
 						</a>
+
 					))}
 				</ul>
 			</section>

@@ -1,21 +1,20 @@
 ---
 
-import Logo from '../components/ui/Logo';
-import BubbleCard from '../components/ui/BubbleCard.astro';
 import LayoutPages from '../layouts/LayoutPages.astro';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero.astro';
+import Header from '../components/Header.astro';
+import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
+import BookNewPromotion from '../components/BookNewPromotion.astro';
+import ListOfBooks from '../components/ListOfBooks';
 
 ---
 
 <LayoutPages title="OGIglesias - Escritor">
-	<header class="w-full flex gap-2">
-		<BubbleCard border radius={['3xl']}>
-			<Logo/>
-		</BubbleCard>
-		<NavBar/>
-	</header>
-	<main class="my-xs">
+	<Header/>
+	<main class="w-full my-xs flex flex-col gap-2">
 		<Hero/>
+		<PhraseOsvaldo/>
+		<BookNewPromotion/>
+		<ListOfBooks/>
 	</main>
 </LayoutPages>

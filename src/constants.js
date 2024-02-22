@@ -1,3 +1,3 @@
-const BORDERTYPICAL = 'xl'
+const BORDERTYPICAL = 'rounded-xl'
 
 export { BORDERTYPICAL }

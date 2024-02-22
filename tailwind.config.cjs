@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
 import animations from '@midudev/tailwind-animations'
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		dropShadow: {
+			"bubble": '1px 1px 1px #151518',
+		},
 		colors: {
-			"dark": "#0f1114",
-			"light": "#ebedf0",
+			'text': '#F0F0F0',
+			'background': '#1F1F23',
+			'primary': '#DCAB18',
+			'secondary': '#3F3E41',
+			'accent': '#A4AB8C'
 		},
 		fontSize: {
 			h1: '2.986rem',
@@ -35,31 +42,9 @@ module.exports = {
 			s: '0.25rem'
 		},
 		fontFamily: {
-			montserrat: ['Montserrat', 'sans-serif'],
+			inter: ['Inter Variable'],
 		},
 		extend: {}
 	},
-	plugins: [require("daisyui"), animations],
-	daisyui: {
-		themes: [
-			{
-				light: {
-					"primary": "#e7b623",
-					"secondary": "#bfbec1",
-					"accent": "#6c7354",
-					"neutral": "#242429",
-					"base-100": "#dcdce0",
-				},
-				dark: {
-					"primary": "#dcab18",
-					"secondary": "#3f3e41",
-					"accent": "#a4ab8c",
-					"neutral": "#242429",
-					"base-100": "#1f1f23",
-				},
-			},
-		],
-	},
-
-
+	plugins: [],
 }

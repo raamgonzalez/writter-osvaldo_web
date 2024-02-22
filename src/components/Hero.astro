@@ -5,28 +5,35 @@ import BubbleCard from "./ui/BubbleCard.astro";
 ---
 
 
-<section class="flex flex-col">
+<section class="flex flex-col w-full h-full justify-center">
 		<img class="self-end rounded-xl object-cover aspect-auto w-full max-h-[300px]" src="./profile/profile_02.jpeg"/>
-		<main class="flex mt-xs gap-2">
-			<BubbleCard background classStyle=={'flex-1'}>
-				OSVALDO GONZALEZ IGLESIAS
+		<main class="mt-xs flex gap-2 justify-between w-full">						
+			<BubbleCard background='secondary'>
+				<p class="h-full grid items-center text-left text-xxl font-medium w-48 text-primary">OSVALDO GONZALEZ IGLESIAS</p>
 			</BubbleCard>
-			<section class="w-full flex flex-wrap flex-0">
-				<BubbleCard border>
+			<section class="flex flex-wrap w-full gap-1 text-base-100">
+				<BubbleCard border classStyle={"w-16 h-16 grid items-center text-center"}>
 					<p>DG</p>
 				</BubbleCard>
-				<BubbleCard border>
+				<BubbleCard border classStyle={"w-16 h-16 grid items-center text-center"}>
 					<p>RD</p>
 				</BubbleCard>
-				<BubbleCard border>
+				<BubbleCard border classStyle={"w-16 h-16 grid items-center text-center"}>
 					<p>IG</p>
 				</BubbleCard>
-				<BubbleCard border>
+				<BubbleCard border classStyle={"w-16 h-16 grid items-center text-center"}>
 					<p>IN</p>
 				</BubbleCard>
-				<BubbleCard border>
+				<BubbleCard border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>EM</p>
+				</BubbleCard>
+				<BubbleCard border classStyle={"w-16 h-16 grid items-center text-center"}>
 					<p>EM</p>
 				</BubbleCard>
 			</section>
 		</main>
 </section>
+
+
+<style>
+</style>

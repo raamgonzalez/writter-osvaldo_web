@@ -1,11 +1,16 @@
 ---
-import BackQuotes from './ui/BackQuotes';
+import BackQuotes from './ui/BackQuotes.astro';
+import BubbleCard from './ui/BubbleCard.astro';
 ---
 
-<section class="mt-mxlarge mb-mxlarge">
-	<section class="flex flex-col gap-2">
-		<BackQuotes/>
-		<p class="text-large font-thin">Todos pasamos por ese filtro, amor, culpa y reparación, en nuestro crecimiento psíquico</p>
-		<span class="text-medium">Osvaldo González Iglesias</span>
+<BubbleCard background='accent' classStyle="h-[200px]">
+	<section class="h-full mt-mxlarge mb-mxlarge text-background grid items-center">
+		<section class="flex flex-col gap-4">
+			<div class="flex flex-col gap-2">
+				<BackQuotes colorFill="fill-secondary"/>
+				<p class="text-large font-light italic">Todos pasamos por ese filtro, amor, culpa y reparación, en nuestro crecimiento psíquico.</p>
+			</div>
+			<span class="text-medium font-medium">Osvaldo González Iglesias</span>
+		</section>
 	</section>
-</section>
+</BubbleCard>
