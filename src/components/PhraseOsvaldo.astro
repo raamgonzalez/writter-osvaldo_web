@@ -1,9 +1,10 @@
 ---
 import BackQuotes from './ui/BackQuotes.astro';
 import BubbleCard from './ui/BubbleCard.astro';
+import CardSpotlight from './ui/CardSpotLight';
 ---
 
-<BubbleCard background='accent' classStyle="h-[200px]">
+<CardSpotlight client:load background={'accent'} classStyle="h-[200px]">
 	<section class="h-full mt-mxlarge mb-mxlarge text-background grid items-center">
 		<section class="flex flex-col gap-4">
 			<div class="flex flex-col gap-2">
@@ -13,4 +14,4 @@ import BubbleCard from './ui/BubbleCard.astro';
 			<span class="text-medium font-medium">Osvaldo González Iglesias</span>
 		</section>
 	</section>
-</BubbleCard>
+</CardSpotlight>

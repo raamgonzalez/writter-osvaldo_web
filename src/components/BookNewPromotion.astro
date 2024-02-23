@@ -1,12 +1,13 @@
 ---
-import BubbleCard from "./ui/BubbleCard.astro";
+
+import CardSpotlight from "./ui/CardSpotLight";
+
 ---
 
-<BubbleCard noPadding classStyle="w-full h-full relative">
+<CardSpotlight client:load noPadding classStyle="w-full h-full relative">
 		<a class="w-full rounded-xl" href="https://autoresdeargentina.mercadoshops.com.ar/MLA-1329094593-razones-seminales-osvaldo-gonzalez-iglesias-_JM#position=8&search_layout=stack&type=item&tracking_id=403cabd6-6c6e-46a3-a01f-db7085e1a849/" rel="noopenner noreferrer" target="_blank">
-			<video class="hover:grayscale-[80%] hover:scale-95 transition-transform transition-colors hover:rounded-xl w-full h-full relative shadow-md shadow-base-300 z-0 mt-20 rounded-xl object-center aspect-square object-cover" src="../promotions/razones-seminales.mp4" autoplay muted loop>
+			<video class="hover:grayscale-[80%] hover:scale-[99%] transition-transform transition-colors hover:rounded-xl w-full h-full relative shadow-md shadow-base-300 z-0 mt-20 rounded-xl object-center aspect-square object-cover" src="../promotions/razones-seminales.mp4" autoplay muted loop>
 					Tu navegador no implementa el elemento <code>video</code>.
 			</video>
 		</a>
-</BubbleCard>
-
+</CardSpotlight>

@@ -1,5 +1,5 @@
 import { useStore } from "@nanostores/react";
-import { themeSelected } from "../../context/Themes";
+import { themeSelected } from "../context/Themes";
 
 
 export default function Hamburguer({isOpen}) {

@@ -45,10 +45,10 @@ export default function NavBar() {
 
 	return (
 		<nav className='w-full'>
-			<ul className='list-none flex flex-col gap-2'>
+			<ul className='list-none h-full flex flex-col gap-2'>
 				{navLinks.map((link) =>
 					link.active &&
-					<li className="w-full border border-[#818181] rounded-3xl text-xxl font-bold text-center" key={link.id}>
+					<li className="w-full grid border border-[#818181] rounded-3xl h-full text-2xl items-center font-bold text-center" key={link.id}>
 						<a className="" href={link.href}>{link.name}</a>
 					</li>
 				)
