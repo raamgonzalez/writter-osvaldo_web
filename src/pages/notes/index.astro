@@ -12,23 +12,12 @@ type Note = {
 	href: string,
 	important: boolean
 }
+
 ---
 
 <LayoutPages title="OGIglesias - Notas">
-	<section class="notes__page">
-		<h3>NOTAS</h3>
+	<section class="h-fit">
+		<h3 class="text-large mt-msmall">NOTAS</h3>
 		<ListOfNotes />
 	</section>
 </LayoutPages>
-
-
-
-<style>
-	.notes__page {
-		height: fit-content;
-	}
-	.notes__page h3{
-		font-size: var(--font-size-large);
-		margin: var(--margin-small) 0 0 0;
-	}
-</style>

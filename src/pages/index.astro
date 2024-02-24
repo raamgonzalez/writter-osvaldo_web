@@ -1,39 +1,22 @@
 ---
-// import Articles from '../components/Articles.astro';
-// import ComingSoon from '../components/ComingSoon.astro';
-import Notes from '../components/Notes.astro';
-import ListOfBooks from '../components/ListOfBooks';
-import Phrases from '../components/Phrases.astro';
-import Layout from '../layouts/Layout.astro';
-import BookNewPromotion from '../components/BookNewPromotion.astro';
-import About from '../components/About.astro';
-// import Contact from '../components/Contact.astro';
-import Films from '../components/Films';
-import Home from '../components/Home.astro';
-import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
+
 import LayoutPages from '../layouts/LayoutPages.astro';
+import Hero from '../components/Hero.astro';
+import Header from '../components/Header.astro';
+import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
+import BookNewPromotion from '../components/BookNewPromotion.astro';
+import ListOfBooks from '../components/ListOfBooks';
+import CardSpotLight from '../components/ui/CardSpotLight';
+import ListOfNotes from '../components/ListOfNotes.astro';
+
 ---
 
 <LayoutPages title="OGIglesias - Escritor">
-	<Home/>
-	<About/>
-	<section class="md:flex md:gap-20 ">
-		<BookNewPromotion/>
+	<main class="w-full my-xs flex flex-col gap-2">
+		<Hero/>
 		<PhraseOsvaldo/>
-	</section>
-	<ListOfBooks client:load/>
-	<section class="grid grid-cols-1">
-		<Notes/>
-		<Films client:load/>
-	</section>
-	<Phrases/>
+		<BookNewPromotion/>
+		<ListOfBooks/>
+		<ListOfNotes/>
+	</main>
 </LayoutPages>
-
-<style>
-	main {
-		margin: auto;
-		max-width: 100%;
-		height: 100vh;
-	}
-
-</style>

@@ -1,22 +1,9 @@
 ---
 import ListOfNotes from './ListOfNotes.astro';
-import LineH from './ui/LineH';
 
 ---
 
-<section class="notes">
-	<h2>NOTAS</h2>
-	<LineH/>
+<section class="mt-msection">
+	<h2 class="text-large">NOTAS</h2>
 	<ListOfNotes/>
 </section>
-
-
-<style>
-	.notes{
-		margin: var(--margin-sections) 0 0 0;
-	}
-	.notes h2{
-		font-size: var(--font-size-large);
-	}
-	
-</style>

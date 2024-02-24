@@ -1,0 +1,33 @@
+---
+
+import {BORDERTYPICAL} from '../../constants'
+const { border, radiusEdit, classStyle, background, noPadding } = Astro.props;
+
+const borderStyle = border && 'border border-[#818181]' || '' 
+
+const radiusVariants = {
+    tl: 'rounded-tl-3xl rounded-tr-xl rounded-br-xl rounded-bl-xl',
+    tr: 'rounded-tl-xl rounded-tr-3xl rounded-br-xl rounded-bl-xl',
+    br: 'rounded-tl-xl rounded-tr-xl rounded-br-3xl rounded-bl-xl',
+		bl: 'rounded-tl-xl rounded-tr-xl rounded-br-xl rounded-bl-3xl'
+  }
+
+const backgroundStyles = {
+  primary: 'bg-background',
+  secondary: 'bg-secondary',
+  accent: 'bg-accent'
+}
+
+
+
+const isStyles = classStyle && classStyle || ''
+const isRadiusEdit = radiusEdit && radiusVariants[radiusEdit] || BORDERTYPICAL
+const backgroundStyle = background && backgroundStyles[background] || ''
+const isNotPadding = noPadding ? '' : 'p-l'
+
+
+---
+
+<div class={`${isNotPadding} ${borderStyle} ${isRadiusEdit} ${isStyles} ${backgroundStyle} drop-shadow-bubble`}>
+	<slot />
+</div>

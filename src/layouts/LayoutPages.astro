@@ -1,7 +1,9 @@
 ---
+
+// Supports weights 100-900
+import '@fontsource-variable/inter';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro'
-import ButtonTop from '../components/ui/ButtonTop.astro'
+import Header from '../components/Header.astro';
 export interface Props {
 	title: string;
 }
@@ -10,7 +12,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
@@ -20,53 +22,22 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<Header id="top"/>
-		<section class="pages__margin">
+	<body class="font-inter w-full h-full p-xl bg-background text-text">
+		<Header/>
+		<main>
 			<slot />
-		</section>
-		<ButtonTop/>
-		<Footer />
+		</main>
+		<Footer/>
 	</body>
 </html>
+
+
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200;300;400&display=swap');
-:root {
-	--accent: 124, 58, 237;
-	--accent-gradient: linear-gradient(5deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(5deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 
-	--color-primary: #FFEAD5;
-	--color-secondary: #E3E3E3;
-	--color-icons: #1E1E1E;
-	--color-background: #2D272D;
-	--color-slider: #559E97;
-
-	--margin-sections: 160px;
-	--margin-xlarge: 80px;
-	--margin-large: 40px;
-	--margin-small: 20px;
-
-
-	--padding-horizontal: 20px;
-
-	--font-base: 'Oswald', sans-serif;
-	--font-text: 'Belleza', sans-serif; 
-
-	--font-size-large: clamp(31px,4vw,50px);
-	--font-size-medium: clamp(20px,2vw,35px);
-	--font-size-small: clamp(16px,1.5vw,25px);
-}
-
-
-	.pages__margin{
-		margin: var(--margin-xlarge) 0;
-	}
-
-	html {
-		scroll-behavior: smooth;
-		font-weight: normal;
-		background-color: var(--color-background);
-		color: var(--color-primary);
+		--color-slider: #559E97;
 	}
 
 	::-webkit-scrollbar{
@@ -84,15 +55,7 @@ const { title } = Astro.props;
 		background-color: var(--color-secondary);
 	}
 
-	body{
-		/* margin: var(--margin-xlarge) 0 var(--margin-large); */
-		font-family: var(--font-base);
-		width: 100%;
-		height: 100%;
-		padding: var(--margin-small) var(--margin-small);
-	}
-
-
+/* 
 @media (768px <= width <= 996px) {
 
 	.pages__margin{
@@ -127,5 +90,5 @@ const { title } = Astro.props;
 		padding: 40px 20rem;
 	}
 
-}
+} */
 </style>

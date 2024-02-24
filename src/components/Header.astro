@@ -1,24 +1,12 @@
 ---
 import NavBar from './NavBar'
-import Logo from './Logo.astro';
+import Logo from './ui/Logo';
+import BubbleCard from './ui/BubbleCard.astro';
+import CardSpotlight from './ui/CardSpotLight';
 ---
-
-<header class="header">
-	<Logo/>
-	<NavBar client:load/>
+<header class="w-full flex gap-2">
+	<CardSpotlight client:load  border radiusEdit={'tl'} classStyle={'w-full h-full flex justify-center'}>
+		<Logo/>
+	</CardSpotlight>
+	<NavBar/>
 </header>
-
-
-<style>
-	.header{
-		display: flex;
-		justify-content: space-between;	
-	}
-
-	@media (1280px <= width <= 2000px) {
-		.header{
-		align-items: center;
-	}
-
-}
-</style>

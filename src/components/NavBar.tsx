@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import '../styles/navbar.css'
+import { useStore } from '@nanostores/react';
+import { themeSelected } from '../context/Themes';
+import CardSpotlight from './ui/CardSpotLight';
 
 interface NavLinks {
 	id: number
@@ -9,12 +11,6 @@ interface NavLinks {
 }
 
 export const navLinks: NavLinks[] = [
-	{
-		id: 1,
-		name: 'Inicio',
-		href: '/',
-		active: true
-	},
 	{
 		id: 2,
 		name: 'Acerca',
@@ -44,28 +40,22 @@ export const navLinks: NavLinks[] = [
 
 export default function NavBar() {
 
-	const [isOpen, setIsOpen] = useState(false)
+	const $themeSelected = useStore(themeSelected);
+	const isDarkMode = $themeSelected === 'dark'
 
 	return (
-		<>
-			<section>
-				<button onClick={() => setIsOpen(!isOpen)} className='header__abrir navbar__button'><img src='/ui/hamburger_open.svg' /></button>
-      	<nav className={isOpen ? 'navbar navbar--visible' : 'navbar'}>
-					<button onClick={() => setIsOpen(!isOpen)} className='navbar__cerrar navbar__button'><img className='navbar__img' src='/ui/hamburger_close.svg' /></button>
-						<ul className='nav__ul'>
-						{ navLinks.map((link) => {
-							return (
-									link.active && (
-									<li className="nav__li" key={link.id}>
-										<a className="nav__a" href={ link.href }>{ link.name }</a>
-									</li>
-									)
-								)
-							})
-						}
-						</ul>
-      	</nav>
-			</section>
-		</>
+		<nav className='w-full h-full'>
+			<ul className='list-none h-full flex flex-col gap-2 justify-between'>
+				{navLinks.map((link) =>
+					link.active &&
+					<CardSpotlight action key={link.id} border radiusEdit='all' classStyles={'w-full h-full'}>
+						<li className='h-[0.9rem] w-full flex items-center justify-center text-center'>
+							<a className="text-xl font-bold w-full p-0 x-0" href={link.href}>{link.name}</a>
+						</li>
+					</CardSpotlight>
+				)
+				}
+			</ul >
+		</nav >
 	)
 }
