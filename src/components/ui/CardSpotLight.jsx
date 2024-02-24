@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { BACKGROUNDSTYLES, BORDERTYPICAL, RADIUSVARIANTS } from '../../constants';
 
-const CardSpotlight = ({ border = false, children, classStyle = '', background, noPadding = false, radiusEdit = '' }) => {
+const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', background, noPadding = false, radiusEdit = '', action = false }) => {
 
   const divRef = useRef(null);
   const [isFocused, setIsFocused] = useState(false);
@@ -11,10 +11,10 @@ const CardSpotlight = ({ border = false, children, classStyle = '', background, 
   const isStyles = classStyle && classStyle || ''
   const borderStyle = border && 'border border-[#818181]' || ''
 
-  const backgroundStyle = background ? BACKGROUNDSTYLES[background] || ['bg-gradient-to-r from-[#3f3e41] to-[#464646]', 'rgb(220, 171, 24, .1)'] : ['bg-background', 'rgb(240, 240, 240,.1)']
+  const backgroundStyle = background ? BACKGROUNDSTYLES[background] || ['bg-gradient-to-r from-[#3f3e41] to-[#464646]', 'rgb(39, 170, 122, .3)'] : ['bg-background', 'rgb(240, 240, 240,.1)']
   const isNotPadding = noPadding ? '' : 'p-l'
   const isRadiusEdit = radiusEdit && RADIUSVARIANTS[radiusEdit] || BORDERTYPICAL
-
+  const isAction = action && 'cursor-pointer transition duration-300 ease-in-out transform hover:scale-[101%] active:scale-[99%] focus:scale-[101%] focus-visible:scale-[101%] focus-within:scale-[101%] focus-visible:scale-[101%] hover:scale-[101%]' || ''
 
 
   const handleMouseMove = (e) => {
@@ -44,15 +44,25 @@ const CardSpotlight = ({ border = false, children, classStyle = '', background, 
     setOpacity(0);
   };
 
+  const onClick = () => {
+    if (hrefLink) {
+      window.open(hrefLink, '_blank');
+    } else {
+      console.log('No link provided');
+    }
+  }
+  
+
   return (
     <div
+      onClick={onClick}
       ref={divRef}
       onMouseMove={handleMouseMove}
       onFocus={handleFocus}
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${borderStyle} ${isStyles} ${backgroundStyle[0]} ${isRadiusEdit} ${isNotPadding} relative flex items-center justify-center overflow-hidden shadow-bubble`}
+      className={`${borderStyle} ${isStyles} ${backgroundStyle[0]} ${isRadiusEdit} ${isNotPadding} ${isAction} relative overflow-hidden shadow-bubble`}
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'

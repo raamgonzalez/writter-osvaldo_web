@@ -9,7 +9,9 @@ const RADIUSVARIANTS = {
 	tl: 'rounded-tl-3xl rounded-tr-xl rounded-br-xl rounded-bl-xl',
 	tr: 'rounded-tl-xl rounded-tr-3xl rounded-br-xl rounded-bl-xl',
 	br: 'rounded-tl-xl rounded-tr-xl rounded-br-3xl rounded-bl-xl',
-	bl: 'rounded-tl-xl rounded-tr-xl rounded-br-xl rounded-bl-3xl'
+	bl: 'rounded-tl-xl rounded-tr-xl rounded-br-xl rounded-bl-3xl',
+	b: 'rounded-tl-xl rounded-tr-xl rounded-br-3xl rounded-bl-3xl',
+	all: 'rounded-tl-3xl rounded-tr-3xl rounded-br-3xl rounded-bl-3xl'
 }
 
 export { BORDERTYPICAL, BACKGROUNDSTYLES, RADIUSVARIANTS }

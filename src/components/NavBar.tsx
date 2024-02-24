@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useStore } from '@nanostores/react';
 import { themeSelected } from '../context/Themes';
-import BubbleCard from './ui/BubbleCard.astro';
+import CardSpotlight from './ui/CardSpotLight';
 
 interface NavLinks {
 	id: number
@@ -44,16 +44,18 @@ export default function NavBar() {
 	const isDarkMode = $themeSelected === 'dark'
 
 	return (
-		<nav className='w-full'>
-			<ul className='list-none h-full flex flex-col gap-2'>
+		<nav className='w-full h-full'>
+			<ul className='list-none h-full flex flex-col gap-2 justify-between'>
 				{navLinks.map((link) =>
 					link.active &&
-					<li className="w-full grid border border-[#818181] rounded-3xl h-full text-2xl items-center font-bold text-center" key={link.id}>
-						<a className="" href={link.href}>{link.name}</a>
-					</li>
+					<CardSpotlight action key={link.id} border radiusEdit='all' classStyles={'w-full h-full'}>
+						<li className='h-[0.9rem] w-full flex items-center justify-center text-center'>
+							<a className="text-xl font-bold w-full p-0 x-0" href={link.href}>{link.name}</a>
+						</li>
+					</CardSpotlight>
 				)
 				}
-			</ul>
-		</nav>
+			</ul >
+		</nav >
 	)
 }

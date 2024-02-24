@@ -12,30 +12,30 @@ import CardSpotlight from "./ui/CardSpotLight";
 			<img class="self-end rounded-xl object-cover aspect-auto w-full max-h-[300px]" src="./profile/profile_02.jpeg"/>
 		</CardSpotlight>
 		<main class="mt-xs flex gap-2 justify-between w-full max-h-[200px]">						
-			<CardSpotlight client:load background classStyle={'w-[13rem]'}>
+			<section class="flex flex-wrap w-full gap-1 text-base-100 flex-1">
+				<CardSpotlight action hrefLink='/books' client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>DG</p>
+				</CardSpotlight>
+				<CardSpotlight action hrefLink='/books' client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>RD</p>
+				</CardSpotlight>
+				<CardSpotlight action client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>IG</p>
+				</CardSpotlight>
+				<CardSpotlight action client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>IN</p>
+				</CardSpotlight>
+				<CardSpotlight action client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>EM</p>
+				</CardSpotlight>
+				<CardSpotlight action client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
+					<p>EM</p>
+				</CardSpotlight>
+			</section>
+			<CardSpotlight border client:load background classStyle={'w-[13rem]'}>
 				<p class="h-full grid items-center text-left text-xxl font-medium w-48 text-primary">
 					OSVALDO GONZALEZ IGLESIAS
 				</p>
 			</CardSpotlight>
-			<section class="flex flex-wrap w-full gap-1 text-base-100 flex-1">
-				<CardSpotlight client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
-					<p>DG</p>
-				</CardSpotlight>
-				<CardSpotlight client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
-					<p>RD</p>
-				</CardSpotlight>
-				<CardSpotlight client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
-					<p>IG</p>
-				</CardSpotlight>
-				<CardSpotlight client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
-					<p>IN</p>
-				</CardSpotlight>
-				<CardSpotlight client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
-					<p>EM</p>
-				</CardSpotlight>
-				<CardSpotlight client:load border classStyle={"w-16 h-16 grid items-center text-center"}>
-					<p>EM</p>
-				</CardSpotlight>
-			</section>
 		</main>
 </section>

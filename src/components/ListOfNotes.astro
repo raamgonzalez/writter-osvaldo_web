@@ -1,6 +1,7 @@
 ---
 
 	import { data } from '../data/data';
+import CardSpotlight from './ui/CardSpotLight';
 	import Container from './ui/Container';
 
 	const { notes } = data;
@@ -15,69 +16,23 @@
 
 ---
 
-<section class="mt-msmall flex flex-col gap-4">
-	{notes.map((note:Note) => (
-
-		note.important &&
-		<Container>
-			<a href={note.href} class="flex flex-col gap-1 font-belleza">
-				<p class="text-medium font-bold">{note.title}</p>
-				<p class="text-small">{note.content}</p>
+<section class="flex flex-col gap-0">
+	<CardSpotlight action background classStyle='flex flex-col h-full' client:load>
+		<h3 class="text-xxxl text-accent">Notas</h3>
+		<!-- {notes.map((note:Note) => (
+			note.important &&
+			<CardSpotlight action classStyle={'w-full h-20 text-left'} border client:load>
+				<a href={note.href} class="flex flex-col gap-1 text-left">
+					<p class="text-n font-semibold">{note.title}</p>
+					<p class="text-n font-light">{note.content}</p>
+				</a>
+			</CardSpotlight>
+		))} -->
+		<!-- <CardSpotlight action classStyle={'w-full text-left'} border client:load>
+			<a href={''} class="flex flex-col gap-1 font-belleza text-left">
+				<p class="text-medium font-bold">Ver mas...</p>
 			</a>
-		</Container>
-	))}
+		</CardSpotlight> -->
+	</CardSpotlight>
 </section>
 
-	
-
-<style>
-
-	/* .note__section{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		place-items: center;
-	} */
-
-
-	.note__button{
-		display: flex;
-		padding: 0 0 0 11px;
-		justify-content: space-between;
-		align-items: center;
-
-		width: 100%;
-		height: 35px;
-		border-radius: 5px;
-		border: 1px solid var(--color-primary);
-	}
-
-	/* @media (min-width: 768px) {
-
-	.note{
-		margin: var(--margin-small) 0 0 0;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.note__section{
-		display: flex;
-		flex-direction: column;
-		place-items: flex-start;
-	}
-}
-@media (1280px <= width <= 2000px) {
-	.note__singular{
-		width: 100%;
-		padding: 0.5rem 0.5rem;
-	}
-
-	.note__singular:hover{
-		background-color: var(--color-primary);
-		color: var(--color-background);
-		transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
-	}
-
-} */
-
-</style>
