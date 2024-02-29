@@ -1,8 +1,7 @@
 ---
 
-	import { data } from '../data/data';
-import CardSpotlight from './ui/CardSpotLight';
-	import Container from './ui/Container';
+	import { data } from '@/data/data';
+	import CardSpotlight from "@/ui/CardSpotLight"
 
 	const { notes } = data;
 
@@ -17,7 +16,6 @@ import CardSpotlight from './ui/CardSpotLight';
 ---
 
 <section class="flex flex-col gap-0">
-	<CardSpotlight action background classStyle='flex flex-col h-full' client:load>
 		<h3 class="text-xxxl text-accent">Notas</h3>
 		<!-- {notes.map((note:Note) => (
 			note.important &&
@@ -33,6 +31,5 @@ import CardSpotlight from './ui/CardSpotLight';
 				<p class="text-medium font-bold">Ver mas...</p>
 			</a>
 		</CardSpotlight> -->
-	</CardSpotlight>
 </section>
 

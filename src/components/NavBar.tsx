@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import { useStore } from '@nanostores/react';
-import { themeSelected } from '../context/Themes';
-import CardSpotlight from './ui/CardSpotLight';
+import { themeSelected } from '@/context/Themes';
+import CardSpotlight from "@/ui/CardSpotLight"
 
 interface NavLinks {
 	id: number

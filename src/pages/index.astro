@@ -1,22 +1,28 @@
 ---
 
-import LayoutPages from '../layouts/LayoutPages.astro';
-import Hero from '../components/Hero.astro';
-import Header from '../components/Header.astro';
-import PhraseOsvaldo from '../components/PhraseOsvaldo.astro';
-import BookNewPromotion from '../components/BookNewPromotion.astro';
-import ListOfBooks from '../components/ListOfBooks';
-import CardSpotLight from '../components/ui/CardSpotLight';
-import ListOfNotes from '../components/ListOfNotes.astro';
+
+import Hero from '@/sections/Hero.astro';
+import PhraseOsvaldo from '@/components/PhraseOsvaldo.astro';
+import BookNewPromotion from '@/components/BookNewPromotion.astro';
+import ListOfNotes from '@/components/ListOfNotes.astro';
+import ListOfBooks from '@/components/ListOfBooks';
+import ListOfFilms from '@/components/ListOfBooks';
+import CardSpotlight from '@/ui/CardSpotLight';
+import LayoutPages from '@/layouts/LayoutPages.astro';
 
 ---
 
 <LayoutPages title="OGIglesias - Escritor">
-	<main class="w-full my-xs flex flex-col gap-2">
+	<main class="w-full my-s flex flex-col gap-3">
 		<Hero/>
-		<PhraseOsvaldo/>
-		<BookNewPromotion/>
+		<CardSpotlight client:load background={'accent'} classStyle="h-[200px]">
+			<PhraseOsvaldo/>
+		</CardSpotlight>
+		<CardSpotlight client:load noPadding classStyle="w-full h-full relative">
+			<BookNewPromotion/>
+		</CardSpotlight>
 		<ListOfBooks/>
 		<ListOfNotes/>
+		<ListOfFilms/>
 	</main>
 </LayoutPages>

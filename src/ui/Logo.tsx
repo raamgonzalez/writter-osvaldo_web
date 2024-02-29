@@ -1,11 +1,11 @@
 
 
 import { useStore } from '@nanostores/react';
-import { themeSelected } from '../../context/Themes';
+import { themeSelected } from '../context/Themes';
 import { useEffect } from 'react';
 
 export default function Logo({ size }: any) {
-	const widthLogo = size === 'small' ? 42 : 172
+	const widthLogo = size === 'small' ? 60 : 172
 	const $themeSelected = useStore(themeSelected);
 
 

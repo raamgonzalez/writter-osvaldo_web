@@ -1,12 +1,12 @@
 
-import '../styles/listofbooks.css'
-import '../styles/progressbar.css'
+import '@/styles/listofbooks.css'
+import '@/styles/progressbar.css'
 
-import { data } from '../data/data';
+import { data } from '@/data/data';
 import { useRef } from 'react';
 const { books } = data;
 import { motion, useScroll } from "framer-motion";
-import CardSpotlight from './ui/CardSpotLight';
+
 
 type Book = {
 	id: number;

@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react';
-import { BACKGROUNDSTYLES, BORDERTYPICAL, RADIUSVARIANTS } from '../../constants';
+import { BACKGROUNDSTYLES, BORDERTYPICAL, RADIUSVARIANTS } from '../constants';
 
 const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', background, noPadding = false, radiusEdit = '', action = false }) => {
+
 
   const divRef = useRef(null);
   const [isFocused, setIsFocused] = useState(false);

@@ -236,36 +236,42 @@ export const data = {
       id: 1,
       title: 'Diario digital',
       href: 'https://www.debateyconvergencia.com.ar',
+      icon: '../../public/icons/newspaper-icon.svg',
       state: true
     },
     {
       id: 2,
       title: 'Radio - Debate y Convergencia',
       href: 'https://www.radiozonica.com.ar/#!/home',
+      icon: '../../public/icons/radio-icon.svg',
       state: true
     },
     {
       id: 3,
       title: 'LinkedIn',
       href: 'https://www.linkedin.com/in/osvaldo-gonzalez-1354a8a8/',
+      icon: '../../public/icons/linkedin-icon.svg',
       state: true
     },
     {
       id: 4,
       title: 'Twitter',
       href: 'https://twitter.com/Debateyconverg1',
+      icon: '../../public/icons/x-icon.svg',
       state: true
     },
     {
       id: 5,
       title: 'Instagram',
       href: 'https://www.instagram.com/osvaldogonzalez99/',
+      icon: '../../public/icons/instagram-icon.svg',
       state: true
     },
     {
       id: 6,
       title: 'Correo electrónico',
       href: 'mailto:ongonzalez@buenosaires.gob.ar',
+      icon: '../../public/icons/email-icon.svg',
       state: true
     }
   ]

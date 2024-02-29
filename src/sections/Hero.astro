@@ -1,0 +1,29 @@
+---
+import { data } from '@/data/data';
+import CardSpotlight from "@/ui/CardSpotLight"
+const { contact } = data;
+---
+
+
+<section class="flex flex-col w-full h-full justify-center">
+		<CardSpotlight noPadding client:load>
+			<img class="self-end rounded-xl object-cover aspect-auto w-full max-h-[300px]" src="./profile/profile_02.jpeg"/>
+		</CardSpotlight>
+		<main class="mt-xs flex gap-2 justify-between w-full max-h-[200px]">						
+			<section class="flex flex-wrap w-full gap-1 text-base-100 flex-1">
+				{
+					contact.map((social) => (
+						<CardSpotlight action hrefLink={social.href} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+							<img class="text-center" src={social.icon}>
+						</CardSpotlight>
+						))
+				}
+			</section>
+			<CardSpotlight border client:load background classStyle={'w-[13rem]'}>
+				<p class="h-full grid items-center text-left text-xxl font-medium w-48 text-accent">
+					OSVALDO GONZALEZ IGLESIAS
+				</p>
+			</CardSpotlight>
+		</main>
+</section>
+../ui/CardSpotLight
