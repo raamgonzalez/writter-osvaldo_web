@@ -47,7 +47,7 @@ export default function NavBar() {
 			<ul className='list-none h-full flex flex-col gap-2 justify-between'>
 				{navLinks.map((link) =>
 					link.active &&
-					<CardSpotlight action key={link.id} border radiusEdit='all' classStyles={'w-full h-full'}>
+					<CardSpotlight action key={link.id} border radiusEdit='all' classStyle={'w-full h-full'}>
 						<li className='h-[0.9rem] w-full flex items-center justify-center text-center'>
 							<a className="text-xl font-bold w-full p-0 x-0" href={link.href}>{link.name}</a>
 						</li>
