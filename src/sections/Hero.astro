@@ -1,8 +1,7 @@
 ---
 import { data } from '@/data/data';
 import CardSpotlight from "@/ui/CardSpotLight"
-import ContactList from "@/helpers/ContactList"
-const { contact } = data;
+import ContactList from "@/components/ContactList.astro"
 ---
 
 
@@ -12,13 +11,7 @@ const { contact } = data;
 		</CardSpotlight>
 		<main class="mt-xs flex gap-2 justify-between w-full max-h-[200px]">						
 			<section class="flex flex-wrap w-full gap-1 text-base-100 flex-1">
-				{
-					contact.map((social) => (
-						<CardSpotlight action hrefLink={social.href} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
-							<img class="text-center" src={social.icon}>
-						</CardSpotlight>
-						))
-				}
+				<ContactList/>
 			</section>
 			<CardSpotlight border client:load background classStyle={'w-[13rem]'}>
 				<p class="h-full grid items-center text-left text-xxl font-medium w-48 text-accent">

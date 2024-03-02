@@ -1,0 +1,29 @@
+---
+import EmailIcon from '@/icon/email.astro'
+import InstagramIcon from '@/icon/instagram.astro'
+import LinkedinIcon from '@/icon/linkedin.astro'
+import NewspaperIcon from '@/icon/newspaper.astro'
+import RadioIcon from '@/icon/radio.astro'
+import XIcon from '@/icon/x.astro'
+import CardSpotlight from '@/ui/CardSpotLight'
+---
+
+
+<CardSpotlight action hrefLink={'mailto:ongonzalez@buenosaires.gob.ar'} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+	<EmailIcon class="w-full h-full"/>
+</CardSpotlight>
+<CardSpotlight action hrefLink={'https://www.debateyconvergencia.com.ar'} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+	<NewspaperIcon class="w-full h-full"/>
+</CardSpotlight>
+<CardSpotlight action hrefLink={'https://www.instagram.com/osvaldogonzalez99/'} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+	<InstagramIcon class="w-full h-full"/>
+</CardSpotlight>
+<CardSpotlight action hrefLink={'https://www.linkedin.com/in/osvaldo-gonzalez-1354a8a8/'} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+	<LinkedinIcon class="w-full h-full"/>
+</CardSpotlight>
+<CardSpotlight action hrefLink={'https://www.radiozonica.com.ar/#!/home'} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+	<RadioIcon class="w-full h-full"/>
+</CardSpotlight>
+<CardSpotlight action hrefLink={'https://twitter.com/Debateyconverg1'} client:load border classStyle={"w-16 h-16 grid items-center text-center justify-center"}>
+	<XIcon class="w-full h-full"/>
+</CardSpotlight>

@@ -6,14 +6,14 @@ import PhraseOsvaldo from '@/components/PhraseOsvaldo.astro';
 import BookNewPromotion from '@/components/BookNewPromotion.astro';
 import ListOfNotes from '@/components/ListOfNotes.astro';
 import ListOfBooks from '@/components/ListOfBooks';
-import ListOfFilms from '@/components/ListOfBooks';
+import ListOfFilms from '@/components/ListOfFilms';
 import CardSpotlight from '@/ui/CardSpotLight';
 import LayoutPages from '@/layouts/LayoutPages.astro';
 
 ---
 
 <LayoutPages title="OGIglesias - Escritor">
-	<main class="w-full my-s flex flex-col gap-3">
+	<main class="w-full my-s flex flex-col gap-3 md:my-xxl">
 		<Hero/>
 		<CardSpotlight client:load background={'accent'} classStyle="h-[200px]">
 			<PhraseOsvaldo/>
@@ -22,7 +22,9 @@ import LayoutPages from '@/layouts/LayoutPages.astro';
 			<BookNewPromotion/>
 		</CardSpotlight>
 		<ListOfBooks/>
-		<ListOfNotes/>
+		<CardSpotlight background client:load classStyle="w-full flex justify-centerh-full" action >
+			<ListOfNotes/>
+		</CardSpotlight>
 		<ListOfFilms/>
 	</main>
 </LayoutPages>
