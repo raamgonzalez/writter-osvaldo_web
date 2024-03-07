@@ -39,9 +39,6 @@ export const navLinks: NavLinks[] = [
 
 export default function NavBar() {
 
-	const $themeSelected = useStore(themeSelected);
-	const isDarkMode = $themeSelected === 'dark'
-
 	return (
 		<nav className='w-full h-full'>
 			<ul className='list-none h-full flex flex-col gap-2 justify-between'>

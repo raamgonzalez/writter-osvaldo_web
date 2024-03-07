@@ -1,6 +1,7 @@
 ---
 import { data } from '@/data/data'
 import LayoutPages from '@/layouts/LayoutPages.astro'
+import CardSpotlight from '@/ui/CardSpotLight';
 
 const { books } = data;
 
@@ -36,35 +37,31 @@ const sortsBook = books.sort(checkSortBooks);
 
 
 <LayoutPages title="OGIglesias - Libros">
-	<section class="h-fit">
-		<h3 class="text-large">LIBROS</h3>
-	</section>
-	<ul class="flex flex-col justify-start flex-wrap gap-12">
-
+	<ul class="my-xs flex flex-col items-center gap-8 h-full w-full">
 			{books.map((book:Book) => (
-				<section class="mt-mlarge">
-					<h4 class="text-large mb-msmall" id={book.title}>{book.title}</h4>
+				<section class="mt-xs flex flex-col gap-2 w-full">
+					<h4 class="text-xxl" id={book.title}>{book.title}</h4>
 					<li class="flex flex-col gap-4">
 						<div class="book-container">
 							<div class="book">
-								<img class="w-[30rem] object-cover shadow-md shadow rounded-md shadow-base-300" src={book.img} alt={book.title} />
+								<img class="w-full object-cover shadow-md shadow rounded-md shadow-base-300" src={book.img} alt={book.title} />
 							</div>
 						</div>
-						<section class="flex flex-col [&>p]:text-medium font-belleza font-thin">
-							<section class="[&>p]:text-medium">
+						<section class="flex flex-col [&>p]:text-m font-thin">
+							<section class="[&>p]:text-m">
 								<p><span class="font-bold">Género:  </span> {book.issue}</p>
 								<p><span class="font-bold">Año públicación:  </span> {book.release}</p>
 							</section>
-							<p class="mt-msmall">{book.description}</p>
-							<section class="mt-msmall grid items-center text-center gap-4">
+							<p class="mt-xs">{book.description}</p>
+							<section class="mt-s grid items-center text-center gap-3 text-m">
 							{
 								book.links.map((link) => (
 									link.href && link.store &&(
-										<Container>
-											<a class="font-bold" href={link.href} target="_blank" rel="noopener noreferrer">
+										<CardSpotlight client:load action border hrefLink={link.href}>
+											<a class="font-bold w-full" target="_blank" rel="noopener noreferrer">
 												COMPRAR <span class="font-thin"> en {link.store}</span>
 											</a>
-										</Container>
+										</CardSpotlight>
 									)
 								))
 							}
