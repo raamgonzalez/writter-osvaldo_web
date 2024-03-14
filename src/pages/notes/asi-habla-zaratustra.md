@@ -6,7 +6,7 @@ description: "Nota sobre 'Así habla Zaratustra'"
 date: '02/05/2023'
 ---
 
-*******
+***********
 
 Los argentinos no podemos superar lo que la filosofía considero a mediados del siglo pasado una teoría que difundió Friedrich Nietzsche, **la historia no sería lineal** , sino cíclica, vuelve a ocurrir una y otra vez, son aquellos hechos que el hombre produce inocentemente los que se repetirán hasta la eternidad. En la Gaya Ciencia (1882), por supuesto una cuestión hipotética (decía Heidegger) no un hecho. Es un método, una herramienta que el nihilismo considero para juzgar la propia vida, un principio moral orientador, nuestros actos, buenos o malos, se repetirán hasta el hartazgo. Nietzsche la consideraba como la doctrina del superhombre, el que vivía su vida una y otra vez, sin arrepentirse de alguna de sus decisiones ya que la misma lo llevaba a una nueva forma de anhelar la vida, la creación de nuevos principios y valores, el mismo es su juez y su verdugo.
 

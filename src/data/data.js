@@ -149,7 +149,7 @@ export const data = {
       title: 'Entrevista - Editorial Adarve',
       content: 'Presentación Neurosis',
       href: 'https://editorialadarveblog.blogspot.com/2018/06/entrevista-osvaldo-gonzalez-iglesias.html',
-      important: false
+      important: true
     },
     {
       id: 2,
@@ -163,21 +163,21 @@ export const data = {
       title: 'Borges en sus laberintos',
       content: 'Obra de teatro',
       href: '/notes/borges-en-sus-laberintos',
-      important: false
+      important: true
     },
     {
       id: 4,
       title: 'Así hablo Zaratusta',
       content: 'Nota editorial',
       href: '/notes/asi-habla-zaratustra',
-      important: false
+      important: true
     },
     {
       id: 5,
       title: 'Donde cobijo la mirada',
       content: 'Poema del autor',
       href: '/notes/donde-cobijo-la-mirada',
-      important: false
+      important: true
     },
     {
       id: 6,
@@ -198,7 +198,7 @@ export const data = {
       title: 'Entevista - Editorial',
       content: 'Entrevista al autor',
       href: 'https://editorial-adarve.com/osvaldo-gonzalez-iglesias/',
-      important: false
+      important: true
     }
   ],
   films: [

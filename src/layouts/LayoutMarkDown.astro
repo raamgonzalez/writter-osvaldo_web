@@ -25,46 +25,23 @@ const { frontmatter, url } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter.title}</title>
 	</head>
-	<body>
-		
+	<body class="min-w-full w-full h-full p-xl bg-background text-text">
 		<Header />
-		<div class="markdown__container">
-			<h1 class="markdown__title">{frontmatter.title}</h1>
-			<p class="markdown__autor">{frontmatter.author}</p>
-			<p class="markdown__date">{frontmatter.date}</p>
-			<slot />
-		</div>
-		<ButtonTop/>
+		<main class="markdown my-s">
+			<h1 class="text-xl font-bold">{frontmatter.title}</h1>
+			<p class="text-m">{frontmatter.author}</p>
+			<p class="text-m">{frontmatter.date}</p>
+			<div class="font-thin text-balance">
+				<slot />
+			</div>
+		</main>
 		<Footer />
 	</body>
 </html>
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald:wght@200;300;400&display=swap');
+
 
 	:root {
-	--accent: 124, 58, 237;
-	--accent-gradient: linear-gradient(5deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-
-	--color-primary: #FFEAD5;
-	--color-secondary: #E3E3E3;
-	--color-icons: #1E1E1E;
-	--color-background: #2D272D;
-	/*Opacity 20% */
-	--color-slider: #559E97;
-
-
-	--margin-xlarge: 80px;
-	--margin-large: 40px;
-	--margin-small: 20px;
-
-	--padding-horizontal: 20px;
-
-	--font-base: 'Oswald', sans-serif;
-	--font-text: 'Belleza', sans-serif; 
-
-	--font-size-large: 31px;
-	--font-size-medium: 20px;
-	--font-size-small: 16px;
 
 }
 
@@ -91,69 +68,9 @@ const { frontmatter, url } = Astro.props;
     background-color: rgb(139, 139, 139);
 	}
 
-	body{
-		font-family: var(--font-text);
-		width: 100%;
-		height: 100vh;
-		padding: var(--margin-small) var(--margin-small);
-	}
 
-
-	.markdown__container{
-		margin: var(--margin-xlarge) 0  var(--margin-xlarge) 0;
-		max-width: 1200px;
-		text-wrap: balance;
-	}
-
-	.markdown__container h2{
-		font-size: var(--font-size-large) var(--font-base);
-		margin: var(--margin-large) 0 var(--margin-small) 0;
-	}
-
-	.markdown__container h3{
-		font: var(--font-size-small) var(--font-base);
-		margin: var(--margin-large) 0 var(--margin-small) 0;
-	}
-
-	.markdown__container hr{
-		margin: var(--margin-small) 0 var(--margin-large) 0;
-	}
-
-	.markdown__container p{
-		margin: 16px 0 16px 0;
-	}
-
-	.markdown__title{
-		font-size: 4rem;
-		margin: var(--margin-large) 0 var(--margin-small) 0;
-
-	}
-	.markdown__date{
-		margin: 0 0 var(--margin-large) 0;
-	}
-
-
-	.markdown__container h2{
-			font-size: 1.5rem;
-		}
-		.markdown__container h3{
-			font-size: 2rem;
-		}
-
-
-	@media (1280px <= width <= 2000px) {
-
-		body{
-		padding: 40px 20rem;
-	}
-		.markdown__container{
-		text-wrap: wrap;
-	}
-		.markdown__container p{
-			font-size: var(--font-size-medium);
-			font-weight: lighter;
-		}
-
+	.markdown hr{
+		margin: 10px 0 10px 0;
 	}
 
 </style>

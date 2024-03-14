@@ -15,21 +15,16 @@
 
 ---
 
-<section class="flex flex-col gap-0">
-		<h3 class="text-xxxl text-accent">Notas</h3>
-		<!-- {notes.map((note:Note) => (
+<section class="flex flex-col gap-1">
+		<!-- <h3 class="text-xxxl text-accent">Notas</h3> -->
+		{notes.map((note:Note) => (
 			note.important &&
-			<CardSpotlight action classStyle={'w-full h-20 text-left'} border client:load>
+			<CardSpotlight backgroundGrid action classStyle={'w-full h-20 text-left'} border client:load>
 				<a href={note.href} class="flex flex-col gap-1 text-left">
 					<p class="text-n font-semibold">{note.title}</p>
 					<p class="text-n font-light">{note.content}</p>
 				</a>
 			</CardSpotlight>
-		))} -->
-		<!-- <CardSpotlight action classStyle={'w-full text-left'} border client:load>
-			<a href={''} class="flex flex-col gap-1 font-belleza text-left">
-				<p class="text-medium font-bold">Ver mas...</p>
-			</a>
-		</CardSpotlight> -->
+		))}
 </section>
 
