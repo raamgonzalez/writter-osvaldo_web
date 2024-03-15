@@ -3,9 +3,9 @@ import Footer from '@/sections/Footer.astro';
 import Header from '@/sections/Header.astro';
 import Seo from '@/components/Seo.astro';
 
-export interface Props {
+interface Props {
 	title: string;
-	description: string
+	description?: string
 }
 
 const { title, description } = Astro.props;

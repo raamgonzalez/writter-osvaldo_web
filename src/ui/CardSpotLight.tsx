@@ -1,9 +1,23 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { BACKGROUNDSTYLES, BORDERTYPICAL, RADIUSVARIANTS } from '../constants';
+import { RadiusVariants, BackgroundStyles } from '../types'
 
-const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', background, noPadding = false, radiusEdit = '', action = false, backgroundGrid = false }) => {
+interface Props {
+  hrefLink?: string;
+  border?: boolean,
+  children?: React.ReactNode,
+  classStyle?: string,
+  background?: boolean,
+  noPadding?: boolean,
+  radiusEdit?: string,
+  action?: false,
+  backgroundGrid?: boolean
+}
 
-  const divRef = useRef(null);
+
+const CardSpotlight = ({ hrefLink, border, children, classStyle, background, noPadding, radiusEdit, action, backgroundGrid }: Props) => {
+
+  const divRef = useRef<HTMLDivElement>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [opacity, setOpacity] = useState(0);
@@ -11,12 +25,12 @@ const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', bac
   const isStyles = classStyle && classStyle || ''
   const borderStyle = border && 'border border-[#818181]' || ''
 
-  const backgroundStyle = background ? BACKGROUNDSTYLES[background] || ['bg-gradient-to-r from-[#3f3e41] to-[#464646]', 'rgb(39, 170, 122, .3)'] : ['bg-background', 'rgb(240, 240, 240,.1)']
+  const backgroundStyle: BackgroundStyles = background ? BACKGROUNDSTYLES[background] || ['bg-gradient-to-r from-[#3f3e41] to-[#464646]', 'rgb(39, 170, 122, .3)'] : ['bg-background', 'rgb(240, 240, 240,.1)']
   const isNotPadding = noPadding ? '' : 'p-l'
-  const isRadiusEdit = radiusEdit && RADIUSVARIANTS[radiusEdit] || BORDERTYPICAL
+  const isRadiusEdit: RadiusVariants = radiusEdit && RADIUSVARIANTS[radiusEdit] || BORDERTYPICAL
   const isAction = action && 'cursor-pointer transition duration-300 ease-in-out transform hover:scale-[101%] active:scale-[99%] focus:scale-[101%] focus-visible:scale-[101%] focus-within:scale-[101%] focus-visible:scale-[101%] hover:scale-[101%]' || ''
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!divRef.current || isFocused) return;
 
     const div = divRef.current;
@@ -50,7 +64,7 @@ const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', bac
       console.log('No link provided');
     }
   }
-  
+
 
   return (
     <div
@@ -71,7 +85,7 @@ const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', bac
         }}
       />
       {backgroundGrid && <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:6px_16px]">
-      <div className="absolute left-10 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-secondary opacity-5 blur-[100px]"/></div>}
+        <div className="absolute left-10 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-secondary opacity-5 blur-[100px]" /></div>}
       {children}
     </div>
   );
