@@ -3,7 +3,6 @@ import { BACKGROUNDSTYLES, BORDERTYPICAL, RADIUSVARIANTS } from '../constants';
 
 const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', background, noPadding = false, radiusEdit = '', action = false, backgroundGrid = false }) => {
 
-
   const divRef = useRef(null);
   const [isFocused, setIsFocused] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -16,7 +15,6 @@ const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', bac
   const isNotPadding = noPadding ? '' : 'p-l'
   const isRadiusEdit = radiusEdit && RADIUSVARIANTS[radiusEdit] || BORDERTYPICAL
   const isAction = action && 'cursor-pointer transition duration-300 ease-in-out transform hover:scale-[101%] active:scale-[99%] focus:scale-[101%] focus-visible:scale-[101%] focus-within:scale-[101%] focus-visible:scale-[101%] hover:scale-[101%]' || ''
-
 
   const handleMouseMove = (e) => {
     if (!divRef.current || isFocused) return;
@@ -72,8 +70,8 @@ const CardSpotlight = ({hrefLink, border = false, children, classStyle = '', bac
           background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, ${backgroundStyle[1]}, transparent 40%)`,
         }}
       />
-      {backgroundGrid && <div class="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:6px_16px]">
-      <div class="absolute left-10 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-secondary opacity-5 blur-[100px]"/></div>}
+      {backgroundGrid && <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:6px_16px]">
+      <div className="absolute left-10 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-secondary opacity-5 blur-[100px]"/></div>}
       {children}
     </div>
   );

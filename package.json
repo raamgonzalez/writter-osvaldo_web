@@ -13,8 +13,6 @@
     "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
     "@astrojs/vercel": "^3.7.0",
-    "@fontsource-variable/inter": "^5.0.16",
-    "@fontsource-variable/montserrat": "^5.0.17",
     "@midudev/tailwind-animations": "^0.0.7",
     "@nanostores/react": "^0.7.1",
     "@nextui-org/react": "^2.2.9",

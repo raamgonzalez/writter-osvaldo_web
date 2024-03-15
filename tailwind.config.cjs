@@ -4,22 +4,6 @@ import animations from '@midudev/tailwind-animations'
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		screens: {
-			'sm': '460px',
-			// => @media (min-width: 640px) { ... }
-
-			'md': '768px',
-			// => @media (min-width: 768px) { ... }
-
-			'lg': '1024px',
-			// => @media (min-width: 1024px) { ... }
-
-			'xl': '1280px',
-			// => @media (min-width: 1280px) { ... }
-
-			'2xl': '1536px',
-			// => @media (min-width: 1536px) { ... }
-		},
 		margin: {
 			xxl: '6rem',
 			xxl: '5rem',
@@ -43,7 +27,7 @@ module.exports = {
 				'background': '#1F1F23',
 				'primary': '#DCAB18',
 				'secondary': '#3F3E41',
-				'accent': '#A4AB8C'
+				'accent': '#BDCE81'
 			},
 			boxShadow: {
 				"bubble": '2px 2px 4px #151518',
@@ -59,8 +43,9 @@ module.exports = {
 				s: '0.833rem'
 			},
 			fontFamily: {
-				inter: ['Inter Variable'],
-			}
+				base: ["Grotesk", "serif"],
+				paragraph: ["Merriweather", "serif"]
+			},
 		}
 	},
 	plugins: [animations],
