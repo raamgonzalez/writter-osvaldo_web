@@ -149,14 +149,14 @@ export const data = {
       title: 'Entrevista - Editorial Adarve',
       content: 'Presentación Neurosis',
       href: 'https://editorialadarveblog.blogspot.com/2018/06/entrevista-osvaldo-gonzalez-iglesias.html',
-      important: true
+      important: false
     },
     {
       id: 2,
       title: 'Jeuretche en sus laberintos',
       content: 'Obra en tres actos, un actor, voz en off',
       href: '/notes/jauretche-en-sus-laberintos',
-      important: true
+      important: false
     },
     {
       id: 3,
@@ -170,7 +170,7 @@ export const data = {
       title: 'Así hablo Zaratusta',
       content: 'Nota editorial',
       href: '/notes/asi-habla-zaratustra',
-      important: true
+      important: false
     },
     {
       id: 5,
@@ -184,7 +184,7 @@ export const data = {
       title: 'Ya no vuelvas',
       content: 'Poema del autor',
       href: '/notes/ya-no-vuelvas',
-      important: true
+      important: false
     },
     {
       id: 6,
@@ -198,7 +198,7 @@ export const data = {
       title: 'Entevista - Editorial',
       content: 'Entrevista al autor',
       href: 'https://editorial-adarve.com/osvaldo-gonzalez-iglesias/',
-      important: true
+      important: false
     }
   ],
   films: [

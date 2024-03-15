@@ -1,8 +1,8 @@
 ---
 
 import { data } from '@/data/data';
-import ListOfNotes from '@/components/ListOfNotes.astro';
 import LayoutPages from '@/layouts/LayoutPages.astro';
+import CardSpotlight from '@/ui/CardSpotLight';
 const { notes } = data;
 
 type Note = {
@@ -17,6 +17,13 @@ type Note = {
 
 <LayoutPages title="OGIglesias - Notas">
 	<main class="w-full my-s flex flex-col gap-3 md:my-xxl">
-		<ListOfNotes />
+		{notes.map((note:Note) => (
+			<CardSpotlight backgroundGrid action classStyle={'w-full h-20 text-left'} border client:load>
+				<a href={note.href} class="flex flex-col gap-1 text-left">
+					<p class="text-n font-semibold">{note.title}</p>
+					<p class="text-n font-light">{note.content}</p>
+				</a>
+			</CardSpotlight>
+		))}
 	</main>
 </LayoutPages>
