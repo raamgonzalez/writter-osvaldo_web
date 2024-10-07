@@ -7,15 +7,16 @@ interface Props {
   border?: boolean,
   children?: React.ReactNode,
   classStyle?: string,
-  background?: boolean,
+  background?: string | boolean,
   noPadding?: boolean,
   radiusEdit?: string,
   action?: false,
-  backgroundGrid?: boolean
+  backgroundGrid?: boolean,
+  customStyles: string
 }
 
 
-const CardSpotlight = ({ hrefLink, border, children, classStyle, background, noPadding, radiusEdit, action, backgroundGrid }: Props) => {
+const CardSpotlight = ({ hrefLink, border, children, classStyle, background, noPadding, radiusEdit, action, backgroundGrid, customStyles }: Props) => {
 
   const divRef = useRef<HTMLDivElement>(null);
   const [isFocused, setIsFocused] = useState(false);
@@ -75,7 +76,7 @@ const CardSpotlight = ({ hrefLink, border, children, classStyle, background, noP
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${borderStyle} ${isStyles} ${backgroundStyle[0]} ${isRadiusEdit} ${isNotPadding} ${isAction} relative overflow-hidden shadow-bubble`}
+      className={`${borderStyle} ${isStyles} ${backgroundStyle[0]} ${isRadiusEdit} ${isNotPadding} ${isAction} ${customStyles} relative overflow-hidden shadow-bubble`}
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'
