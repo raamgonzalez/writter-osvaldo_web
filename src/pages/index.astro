@@ -12,18 +12,19 @@ import LayoutPages from '@/layouts/LayoutPages.astro';
 ---
 
 <LayoutPages title="OGIglesias - Escritor">
-	<main class="w-full my-s flex flex-col gap-3 my-xxl xl:grid grid-cols-3 xl:gap-3 xl:my-s">
+	<main class="w-full flex flex-col gap-3 my-xxl xl:grid grid-cols-3 xl:gap-3 xl:my-s">
 		<section class="flex flex-col gap-3">
 			<Hero/>
-			<CardSpotlight client:load background='accent' classStyle="h-[200px]">
+			<CardSpotlight client:load background='accent' classStyle="h-full">
 				<PhraseOsvaldo/>
 			</CardSpotlight>
 		</section>
 		<CardSpotlight client:load noPadding classStyle="w-full h-full relative">
 			<BookNewPromotion/>
 		</CardSpotlight>
-		<ListOfBooks/>
+		<ListOfBooks client:load/>
 		<ListOfNotes/>
-		<ListOfFilms/>
+		<ListOfFilms client:load/>
+		
 	</main>
 </LayoutPages>

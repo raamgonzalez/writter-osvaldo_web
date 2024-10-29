@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-import defaultTheme from 'tailwindcss/defaultTheme'
 import animations from '@midudev/tailwind-animations'
-module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}', "path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		margin: {
 			xxl: '6rem',
@@ -48,5 +51,8 @@ module.exports = {
 			},
 		}
 	},
-	plugins: [animations],
-}
+	plugins: [animations,  require('flowbite/plugin')],
+	// content: [
+    //     "./node_modules/flowbite/**/*.js"
+    // ]
+})

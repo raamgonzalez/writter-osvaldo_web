@@ -10,6 +10,11 @@
 	transition: all 0.5s ease-in-out;
 }
 
+@media (min-width: 1024px) {
+  .scrollbar-hide {
+    overflow-x: hidden !important;
+  }
+}
 /* @media (1280px <= width <= 2000px) {
 
 	.books__img{
