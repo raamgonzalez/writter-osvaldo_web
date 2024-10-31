@@ -37,30 +37,30 @@ const sortsBook = books.sort(checkSortBooks);
 
 
 <LayoutPages title="OGIglesias - Libros">
-	<ul class="my-xs flex flex-col items-center gap-8 h-full w-full">
+	<ul class="my-xs flex flex-col items-center gap-8 h-full w-full xl:flex-row xl:items-start xl:flex-1 xl:my-xl">
 			{books.map((book:Book) => (
-				<section class="mt-xs flex flex-col gap-2 w-full">
+				<section class="mt-xs flex flex-col gap-2 w-full  xl:min-w-[200px] xl:min-h-full">
 					<h4 class="text-l" id={book.title}>{book.title}</h4>
 					<li class="flex flex-col gap-4">
-						<div class="book-container">
-							<div class="book">
-								<img class="w-full object-cover shadow-md shadow rounded-md shadow-base-300" src={book.img} alt={book.title} />
+						<div class="book-container ">
+							<div class="book ">
+								<img class="w-full object-cover xl:object-cover shadow-md shadow rounded-md shadow-base-300 xl:min-h-[500px] xl:max-h-[400px] xl:object-cover xl:w-full xl:object-top" src={book.img} alt={book.title} />
 							</div>
 						</div>
 						<section class="flex flex-col [&>p]:text-n font-thin">
-							<section class="[&>p]:text-n">
-								<p><span class="font-bold">Género:  </span> {book.issue}</p>
-								<p><span class="font-bold">Año públicación:  </span> {book.release}</p>
-							</section>
-							<p class="mt-xs">{book.description}</p>
-							<section class="mt-s grid items-center text-center gap-3 text-n">
+								<section class="[&>p]:text-n">
+									<p><span class="font-bold">Género:  </span> {book.issue}</p>
+									<p><span class="font-bold">Año públicación:  </span> {book.release}</p>
+								</section>
+								<p class="mt-xs xl:min-h-[600px]">{book.description}</p>
+							<section class="mt-s grid items-center text-center gap-3 text-n ">
 							{
 								book.links.map((link) => (
 									link.href && link.store &&(
 										<CardSpotlight client:load action border hrefLink={link.href}>
 											<a class="font-bold w-full" target="_blank" rel="noopener noreferrer">
 												COMPRAR <span class="font-thin"> en {link.store}</span>
-											</a>
+											</a>	
 										</CardSpotlight>
 									)
 								))
