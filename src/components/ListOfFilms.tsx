@@ -1,7 +1,8 @@
 import { data } from '@/data/data';
 import '@/styles/films.css';
 import '@/styles/progressbar.css';
-import { Carousel } from "@material-tailwind/react";
+import pkg from '@material-tailwind/react';
+const { Carousel } = pkg;
 
 const { films } = data;
 
