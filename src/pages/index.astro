@@ -8,6 +8,7 @@ import ListOfBooks from '@/components/ListOfBooks';
 import ListOfFilms from '@/components/ListOfFilms';
 import CardSpotlight from '@/ui/CardSpotLight';
 import LayoutPages from '@/layouts/LayoutPages.astro';
+import ButtonOnLive from '@/components/ButtonOnLive.astro';
 
 ---
 
@@ -25,6 +26,6 @@ import LayoutPages from '@/layouts/LayoutPages.astro';
 		<ListOfBooks client:load/>
 		<ListOfNotes/>
 		<ListOfFilms client:load/>
-		
+		<ButtonOnLive/>
 	</main>
 </LayoutPages>

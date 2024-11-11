@@ -1,0 +1,112 @@
+---
+import { liveStatus, startLiveStatusInterval } from '@/context/liveStatusStore.js';
+import CardSpotlight from '@/ui/CardSpotLight';
+
+startLiveStatusInterval();
+const liveStatusValue = liveStatus.get(); 
+
+---
+
+
+<CardSpotlight action background hrefLink={'https://www.youtube.com/@RadioZonicaOnline/videos'} client:load border classStyle={"w-16 h-16 grid items-center justify-center xl:w-full h-full xl:flex "}>
+    <div id="container">
+        <a>
+            {liveStatusValue}
+        </a>
+        <p>en Radio Zonica+</p>
+    </div>
+    <div class="rings">
+        <div class="ring__ringlet"></div>
+        <div class="ring__ringlet"></div>
+        <div class="ring__ringlet"></div>
+    </div>
+</CardSpotlight>
+
+
+
+<style>
+
+    #container {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        place-items: center;
+    }
+
+    a {
+        text-align: center;
+        font-size: 9em;
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 1;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a {
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    @keyframes neon1 {
+        from {
+            text-shadow: 0 0 10px #ffffffa9, 0 0 20px #ffffffa9, 0 0 30px #ffffffa9, 0 0 40px #BDCE81,
+            0 0 70px #bdce815b, 0 0 80px #bdce815b, 0 0 100px #bdce815b, 0 0 150px #bdce815b;
+        }
+        to {
+            text-shadow: 0 0 5px #ffffffa9, 0 0 10px #ffffffa9, 0 0 15px #ffffffa9, 0 0 20px #bdce815b,
+            0 0 35px #bdce815b, 0 0 40px #bdce815b, 0 0 50px #bdce815b, 0 0 75px #bdce815b;
+        }
+    }
+
+    .rings {
+        position: absolute;
+        width: 800px;
+        bottom: -75px;
+        left: 50%;
+        margin-left: -400px;
+    }
+
+    .ring__ringlet {
+        width: 400px;
+        height: 400px;
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 50%;
+        margin-left: 50%;
+        left: -200px;
+        position: absolute;
+        bottom: -160px;
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+        animation: ring-1 3000ms ease-out infinite;
+        
+        &:nth-of-type(2) {
+            animation-delay: 600ms;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: 1200ms;
+        }
+    }
+
+    @keyframes ring-1 {
+        0% {
+            transform: scale(0.1, 0.1);
+            opacity: 0;
+            color: #bdce815b;
+        }
+        50% {
+            opacity: 1;
+            color: #bdce815b;
+        }
+        100% {
+            transform: scale(1.2, 1.2);
+            opacity: 0;
+        }
+    }
+</style>
