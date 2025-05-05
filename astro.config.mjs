@@ -8,5 +8,10 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel(),
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1000, // en kilobytes (por ejemplo, 1000 KB = 1 MB)
+    },
+  },
 });
