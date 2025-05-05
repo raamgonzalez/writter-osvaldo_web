@@ -3,7 +3,9 @@ import '@/styles/progressbar.css';
 
 import { data } from '@/data/data';
 
-import { Carousel, IconButton } from "@material-tailwind/react";
+
+import pkg from '@material-tailwind/react';
+const { Carousel, IconButton } = pkg;
 
 type Book = {
 	id: number;
