@@ -37,7 +37,7 @@ const sortsBook = books.sort(checkSortBooks);
 
 
 <LayoutPages title="OGIglesias - Libros">
-	<ul class="my-xs grid grid-cols-4 flex-col items-center gap-8 h-full w-full xl:flex-row xl:items-start xl:flex-1 xl:my-xl min-h-[900px]">
+	<ul class="my-xs flex xl:grid  xl:grid-cols-4 flex-col items-center gap-8 h-full w-full xl:flex-row xl:items-start xl:flex-1 xl:my-xl min-h-[900px]">
 			{sortsBook.map((book:Book) => (
 				<section class="mt-xs flex flex-col gap-2 w-full  xl:min-w-[200px] xl:min-h-full">
 					<h4 class="text-l flex" id={book.title}>{book.title}</h4>
