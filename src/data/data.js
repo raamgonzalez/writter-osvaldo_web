@@ -84,7 +84,39 @@ export const data = {
           store: 'Amazon'
         }
       ]
-    }
+    },
+    {
+      id: 6,
+      title: 'Monigotes de Hojalata',
+      href: '#',
+      img: '/books/portada_monigotes-de-hojalata.jpg',
+      issue: 'Policial Negro',
+      release: 2024,
+      description: 'Helena viaja a Buenos Aires con su madre Elizabeth tras la muerte de su abuela, buscando respuestas sobre su pasado familiar. Héctor, hijo de exiliados argentinos, regresa por un encargo diplomático que lo enfrenta con su historia. Mabel vuelve a Barracas tras la muerte de su padre, un coronel, para indagar sobre la desaparición de su madre. Los tres protagonistas, marcados por heridas del pasado, llegan a la ciudad con propósitos distintos, pero sus caminos se cruzarán en una búsqueda compartida de verdad, memoria y reconciliación.',
+      links: [
+        {
+          id: 1,
+          href: 'https://www.amazon.com/Monigotes-Hojalata-Spanish-Gonz%C3%A1lez-Iglesias-ebook/dp/B0DDZRMVJY',
+          store: 'Amazon'
+        },
+      ]
+    },
+    {
+      id: 7,
+      title: 'Razones Seminales',
+      href: '#',
+      img: '/books/portada_razones-seminales-2.jpg',
+      issue: 'Policial Negro',
+      release: 2024,
+      description: 'En una ciudad oprimida por la desigualdad, un grupo de niños se rebela contra el destino impuesto por la sociedad, organizando una red clandestina en los túneles subterráneos. Inspirados por ideas anarquistas, planean actos de resistencia que desencadenan el caos, mientras son perseguidos por las autoridades. A medida que crece la tensión, un expolicía y un periodista investigan la verdad oculta tras los disturbios, revelando una compleja red de corrupción y poder. La historia plantea una profunda reflexión sobre la injusticia, la rebelión y los límites de la autoridad.',
+      links: [
+        {
+          id: 1,
+          href: 'https://www.amazon.com/Razones-Seminales-conspiracion-Osvaldo-Iglesias-ebook/dp/B0D9WWW2DY',
+          store: 'Amazon'
+        },
+      ]
+    },
   ],
   phrases: [
     {
