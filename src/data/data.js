@@ -117,6 +117,44 @@ export const data = {
         },
       ]
     },
+    {
+      id: 8,
+      title: 'Escribir la vida',
+      href: '#',
+      img: '/books/portada_escribir-la-vida.jpg',
+      issue: 'Ensayo',
+      release: 2025,
+      description: 'La obra Escribir la vida, es un ensayo reflexivo que explora la narrativa como herramienta de conocimiento, expresión existencial y construcción simbólica de la realidad. El texto analiza la escritura como un acto que combina técnica, intuición y búsqueda trascendental, donde el escritor proyecta su experiencia, su contexto cultural y su mirada ética sobre el mundo. A lo largo de la obra, se profundiza en el rol del lenguaje, la construcción del narrador, la función del lector como co-creador del sentido y la relación entre ficción, historia y condición humana. La obra sostiene que narrar es una forma de resistir al olvido, de comprender la complejidad del ser y de abrir horizontes imaginativos que permiten reinterpretar la realidad. Desde esta perspectiva, la literatura aparece como un espacio de libertad, introspección y diálogo social, donde la imaginación, la ética y la estética se entrelazan para dar sentido a la experiencia humana.',
+      links: []
+    },
+    {
+      id: 9,
+      title: 'Etelerinni',
+      href: '#',
+      img: '/books/portada_etelerinni.jpg',
+      issue: 'Drama psicológico',
+      release: 2025,
+      description: 'Etelerinni construye un universo narrativo atravesado por la memoria, la identidad y la tensión entre pasado y destino. La historia sigue un recorrido íntimo y simbólico en el que los personajes enfrentan pérdidas, transformaciones y búsquedas personales, mientras el entorno —social, histórico o emocional— funciona como fuerza que los condiciona y los empuja a definirse.La novela combina una dimensión introspectiva con una mirada más amplia sobre el tiempo, la herencia y las huellas que dejan los hechos colectivos en las vidas individuales. En ese cruce, el relato explora la fragilidad de los recuerdos y la necesidad humana de encontrar sentido incluso en contextos adversos.',
+      links: [{
+        id: 1,
+        href: 'https://www.amazon.com/ETELERINNI-Los-tres-elementos-Spanish/dp/B0G6DM9HZC',
+        store: 'Amazon'
+      }]
+    },
+    {
+      id: 10,
+      title: 'Teatro Obras comprometidas',
+      href: '#',
+      img: '/books/portada_teatro-obras-comprometidas.jpg',
+      issue: 'Teatro',
+      release: 2025,
+      description: 'Las obras de teatro aparecen como espacios de conflicto humano directo, donde la palabra, el cuerpo y la presencia escénica construyen sentido en tiempo real. En conjunto, exploran vínculos de poder, tensiones sociales, crisis identitarias y dilemas morales, poniendo a los personajes en situaciones límite que los obligan a revelarse. El eje común está en la confrontación: entre individuos, entre deseo y norma, entre lo público y lo íntimo. A través del diálogo y la acción dramática, las obras proponen una mirada crítica sobre la sociedad y sobre las decisiones personales que definen el destino de cada personaje.',
+      links: [{
+        id: 1,
+        href: 'https://a.co/d/0gk7RZsm',
+        store: 'Amazon'
+      }]
+    },
   ],
   phrases: [
     {
